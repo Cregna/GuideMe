@@ -5,6 +5,10 @@ using UnityEngine;
 
 public class RoadCreation : MonoBehaviour
 {
+    public delegate void ChangeRoad();
+    public static event ChangeRoad changeRoadEvent;
+
+
     public static string direction;
 public    static int n = 0;
     static Vector3 vector3 = new Vector3(0f, 0f, 0f);
@@ -15,17 +19,23 @@ public    static int n = 0;
     public GameObject right90;
     public GameObject left45;
     public GameObject left90;
-
+    static bool flag=true;
+    //inrease speed 
+    static float speed=1;
 
     // Start is     called before the first frame update
     private void Awake()
     {
         next_road_position=GetComponent<Transform>();
         //        _tr.GetComponents<Transform>();
+
     }
+
+
     void Start()
     {
-        
+
+
         next_road_position.position = vector3;
        rotator= Quaternion.Euler(0f, 0f, 0f);
         //GameObject go = ObjectPoolingManager.Instance.GetObject(straight.name);
@@ -37,69 +47,100 @@ public    static int n = 0;
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.B))
+
+
+        if (flag == true)
         {
-            if (gameObject.transform.GetChild(0).gameObject.activeSelf == false)
+            if (Input.GetKeyDown(KeyCode.B))
             {
-                name_road(0);
-                print("we here"+ RandomRoadChooser.choose[0].ToString());
-              
-                GameObject go = ObjectPoolingManager.Instance.GetObject(RandomRoadChooser.choose[0].ToString());
-                print("we here" + next_road_position.position);
-                n++;
-                go.tag = n.ToString();
-                go.transform.position = next_road_position.position + vector3;
-                go.transform.rotation = rotator;
-                next_road_position.position = go.gameObject.transform.GetChild(1).position;
-                DeleteRoad.CleanRoad();
-                RoadRotator.rotator();
-                print(n);
-              
+                if (gameObject.transform.GetChild(0).gameObject.activeSelf == false)
+                {
+                    name_road(0);
+                    print("we here" + RandomRoadChooser.choose[0].roadName.ToString());
+
+                    GameObject go = ObjectPoolingManager.Instance.GetObject(RandomRoadChooser.choose[0].roadName.ToString());
+                    print("we here" + next_road_position.position);
+                    n++;
+                    go.tag = n.ToString();
+                    go.transform.position = next_road_position.position + vector3;
+                    go.transform.rotation = rotator;
+                    next_road_position.position = go.gameObject.transform.GetChild(1).position;
+
+                    DeleteRoad.CleanRoad();
+                    RoadRotator.rotator();
+
+
+                    flag = false;
+                    StartCoroutine(nextDelay());
+                    print(n);
+
+                    if (changeRoadEvent != null)
+                        changeRoadEvent();
+                    
                 }
             }
-        if (Input.GetKeyDown(KeyCode.N))
-        {
-           
-            if (gameObject.transform.GetChild(0).gameObject.activeSelf == false)
+            if (Input.GetKeyDown(KeyCode.N))
             {
-                name_road(1);
-                print("we here" + RandomRoadChooser.choose[1].ToString());
-                GameObject go = ObjectPoolingManager.Instance.GetObject(RandomRoadChooser.choose[1].ToString());
-                n++;
-                go.tag = n.ToString();
-                go.transform.position = next_road_position.position + vector3;
-                go.transform.rotation = rotator;
-                next_road_position.position = go.gameObject.transform.GetChild(1).position;
-                DeleteRoad.CleanRoad();
-                RoadRotator.rotator();
-                print(n);
 
+                if (gameObject.transform.GetChild(0).gameObject.activeSelf == false)
+                {
+                    name_road(1);
+                    print("we here" + RandomRoadChooser.choose[1].ToString());
+                    GameObject go = ObjectPoolingManager.Instance.GetObject(RandomRoadChooser.choose[1].roadName.ToString());
+                    n++;
+                    go.tag = n.ToString();
+                    go.transform.position = next_road_position.position + vector3;
+                    go.transform.rotation = rotator;
+                    next_road_position.position = go.gameObject.transform.GetChild(1).position;
+                    DeleteRoad.CleanRoad();
+                    RoadRotator.rotator();
+
+                    flag = false;
+                    StartCoroutine(nextDelay());
+                    print("Hey, carutine");
+
+                    if (changeRoadEvent != null)
+                        changeRoadEvent();
+                    
+                }
+            }
+            if (Input.GetKeyDown(KeyCode.M))
+            {
+
+                if (gameObject.transform.GetChild(0).gameObject.activeSelf == false)
+                {
+                    name_road(2);
+                    print("we here" + RandomRoadChooser.choose[2].ToString());
+                    GameObject go = ObjectPoolingManager.Instance.GetObject(RandomRoadChooser.choose[2].roadName.ToString());
+                    n++;
+                    go.tag = n.ToString();
+                    go.transform.position = next_road_position.position + vector3;
+                    go.transform.rotation = rotator;
+                    next_road_position.position = go.gameObject.transform.GetChild(1).position;
+                    DeleteRoad.CleanRoad();
+                    RoadRotator.rotator();
+
+
+                    flag = false;
+                    StartCoroutine(nextDelay());
+                    print(n);
+                    if (changeRoadEvent != null)
+                        changeRoadEvent();
+                    
+                }
             }
         }
-        if (Input.GetKeyDown(KeyCode.M))
-        {
-            
-            if (gameObject.transform.GetChild(0).gameObject.activeSelf == false)
-            {
-                name_road(2);
-                print("we here" + RandomRoadChooser.choose[2].ToString());
-                GameObject go = ObjectPoolingManager.Instance.GetObject(RandomRoadChooser.choose[2].ToString());
-                n++;
-                go.tag = n.ToString();
-                go.transform.position = next_road_position.position + vector3;
-                go.transform.rotation = rotator;
-                next_road_position.position = go.gameObject.transform.GetChild(1).position;
-                DeleteRoad.CleanRoad();
-                RoadRotator.rotator();
-                print(n);
-
-            }
-        }
-
     }
 
+    IEnumerator nextDelay() { 
+        yield return new WaitForSeconds(2*speed);
+        speed = speed*0.9f;
+        flag = true;
+        print("Hey, carutine bitch");
+
+    }
     private void name_road(int i)
     {
-       direction= RandomRoadChooser.choose[i].ToString();
+       direction= RandomRoadChooser.choose[i].roadName.ToString();
     }
 }

@@ -8,6 +8,7 @@ TagManager:
   - 2
   - 3
   - start
+  - 4
   layers:
   - Default
   - TransparentFX
