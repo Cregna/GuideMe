@@ -43,4 +43,33 @@ public class RoadRotator : MonoBehaviour
 
         }
     }
+    
+    public static void rotatorsingle() {
+        switch (RandomRoadSinglePlayer.direction) {
+            case "straight":
+                RandomRoadSinglePlayer.rotator = RandomRoadSinglePlayer.rotator * Quaternion.Euler(0, 0f, 0f);
+                break;
+            case "right45":
+                RandomRoadSinglePlayer.rotator = RandomRoadSinglePlayer.rotator * Quaternion.Euler(0, 45f, 0f);
+                print("Your rotating is"+RandomRoadSinglePlayer.rotator);
+
+                break;
+            case "right90":
+                RandomRoadSinglePlayer.rotator = RandomRoadSinglePlayer.rotator* Quaternion.Euler(0, 90f, 0f);
+                print("Your rotating is" + RandomRoadSinglePlayer.rotator);
+
+                break;
+            case "left45":
+                RandomRoadSinglePlayer.rotator = RandomRoadSinglePlayer.rotator * Quaternion.Euler(0, -45f, 0f);
+                print("Your rotating is" + RandomRoadSinglePlayer.rotator);
+
+                break;
+            case "left90":
+                RandomRoadSinglePlayer.rotator = RandomRoadSinglePlayer.rotator * Quaternion.Euler(0, -90f, 0f);
+                print("Your rotating is" + RandomRoadSinglePlayer.rotator);
+
+                break;
+
+        }
+    }
 }
