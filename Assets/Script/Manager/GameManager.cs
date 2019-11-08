@@ -1,11 +1,11 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : Singleton<GameManager>
 {
-  
-   public Transform next_road_position;
+  public Transform next_road_position;
     public GameObject straight;
     public GameObject right45;
     public GameObject right90;
@@ -35,6 +35,12 @@ public class GameManager : Singleton<GameManager>
     {
 
     }
+
+    public void Lose()
+    {
+        
+    }
+
     public void spaceKey() {
     
         //Sroad.transform.position = vector3;
