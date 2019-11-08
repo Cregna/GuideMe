@@ -9,6 +9,8 @@ TagManager:
   - 3
   - start
   - 4
+  - image
+  - gameover
   layers:
   - Default
   - TransparentFX

@@ -2,24 +2,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RoadCreation : MonoBehaviour
 {
+    [SerializeField] private GameObject imge;
     public delegate void ChangeRoad();
     public static event ChangeRoad changeRoadEvent;
-
-
     public static string direction;
-public    static int n = 0;
+    public    static int n = 0;
     static Vector3 vector3 = new Vector3(0f, 0f, 0f);
- public   static Quaternion rotator ;
+    public   static Quaternion rotator ;
     private static  Transform next_road_position;
     public GameObject straight;
     public GameObject right45;
     public GameObject right90;
     public GameObject left45;
     public GameObject left90;
+    [SerializeField] Text txt;
+    float currentTime=0.01f;
+    float startingTime=5f;
     static bool flag=true;
+    float acceleration=1;
     //inrease speed 
     static float speed=1;
 
@@ -34,7 +38,7 @@ public    static int n = 0;
 
     void Start()
     {
-
+        currentTime = startingTime;
 
         next_road_position.position = vector3;
        rotator= Quaternion.Euler(0f, 0f, 0f);
@@ -47,7 +51,15 @@ public    static int n = 0;
     // Update is called once per frame
     void Update()
     {
+       
+            currentTime -= acceleration * Time.deltaTime;
+            txt.text = currentTime.ToString("f1");
 
+        if (currentTime <= 0) {
+            currentTime = 0f;
+            imge.SetActive(true);
+            //set active gameover image
+        }
 
         if (flag == true)
         {
@@ -69,11 +81,15 @@ public    static int n = 0;
                     DeleteRoad.CleanRoad();
                     RoadRotator.rotator();
 
-
+                    currentTime = startingTime;
+                    if (acceleration <= 2.5f) {
+                        acceleration = acceleration * 1.1f;
+                    }
+                   // acceleration=
                     flag = false;
                     StartCoroutine(nextDelay());
                     print(n);
-
+                 //   acceleration=ac
                     if (changeRoadEvent != null)
                         changeRoadEvent();
                     
@@ -94,7 +110,11 @@ public    static int n = 0;
                     next_road_position.position = go.gameObject.transform.GetChild(1).position;
                     DeleteRoad.CleanRoad();
                     RoadRotator.rotator();
-
+                    currentTime = startingTime;
+                    if (acceleration <= 2.5f)
+                    {
+                        acceleration = acceleration * 1.1f;
+                    }
                     flag = false;
                     StartCoroutine(nextDelay());
                     print("Hey, carutine");
@@ -119,7 +139,11 @@ public    static int n = 0;
                     next_road_position.position = go.gameObject.transform.GetChild(1).position;
                     DeleteRoad.CleanRoad();
                     RoadRotator.rotator();
-
+                    currentTime = startingTime;
+                    if (acceleration <= 2.5f)
+                    {
+                        acceleration = acceleration * 1.1f;
+                    }
 
                     flag = false;
                     StartCoroutine(nextDelay());
