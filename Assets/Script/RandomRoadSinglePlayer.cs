@@ -61,7 +61,7 @@ public class RandomRoadSinglePlayer : MonoBehaviour
             go.transform.rotation = rotator;
             next_road_position.position = go.gameObject.transform.GetChild(1).position;
 
-            DeleteRoad.CleanRoadSingle();
+            //DeleteRoad.CleanRoadSingle();
             RoadRotator.rotatorsingle();
             
         }

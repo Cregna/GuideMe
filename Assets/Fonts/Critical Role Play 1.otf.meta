@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 7491fa3a1f1d61745bcd9712d5b352b7
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Critical Role Play
+  fontNames:
+  - Critical Role Play
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 046dd715ba58eb34f809e861583d08bd, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
