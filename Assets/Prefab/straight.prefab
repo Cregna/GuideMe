@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 2494552174550467346}
   - component: {fileID: 6901039941586614564}
   - component: {fileID: 935027060018415069}
+  - component: {fileID: -5420396028613268164}
   m_Layer: 0
-  m_Name: road_forward
+  m_Name: straight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 1496659782580613377}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 20, y: 20, z: 20}
   m_Children:
   - {fileID: 789024135344949577}
   - {fileID: 6372135292103306572}
@@ -80,6 +81,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &-5420396028613268164
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496659782580613377}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 5869953000610141113, guid: bff7feb686c8d5240b91db0cc5cc06b3, type: 3}
 --- !u!1 &4179328440293710437
 GameObject:
   m_ObjectHideFlags: 0

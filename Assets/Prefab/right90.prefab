@@ -71,8 +71,9 @@ GameObject:
   - component: {fileID: 5553712555612046345}
   - component: {fileID: 3479530560088260159}
   - component: {fileID: 7166722277057675974}
+  - component: {fileID: 1473857922276859446}
   m_Layer: 0
-  m_Name: road_90_right
+  m_Name: right90
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -87,7 +88,7 @@ Transform:
   m_GameObject: {fileID: 8883801047885477402}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 20, y: 20, z: 20}
   m_Children:
   - {fileID: 963596897948891628}
   - {fileID: 3719584904758667077}
@@ -140,3 +141,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &1473857922276859446
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8883801047885477402}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -6250750326331390302, guid: b2eca6ece7e48b24cb4d6207d16d676a, type: 3}
