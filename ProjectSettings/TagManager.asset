@@ -11,6 +11,7 @@ TagManager:
   - 4
   - image
   - gameover
+  - car-camera-rig
   layers:
   - Default
   - TransparentFX
