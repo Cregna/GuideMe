@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using Photon.Pun;
 #if UNITY_EDITOR
 
 #endif
@@ -9,6 +10,7 @@ namespace UnityStandardAssets.Cameras
     [ExecuteInEditMode]
     public class AutoCam : PivotBasedCameraRig
     {
+
         [SerializeField] private float m_MoveSpeed = 3; // How fast the rig will move to keep up with target's position
         [SerializeField] private float m_TurnSpeed = 1; // How fast the rig will turn to keep up with target's rotation
         [SerializeField] private float m_RollSpeed = 0.2f;// How fast the rig will roll (around Z axis) to match target's roll.
@@ -27,7 +29,8 @@ namespace UnityStandardAssets.Cameras
         protected override void FollowTarget(float deltaTime)
         {
             // if no target, or no time passed then we quit early, as there is nothing to do
-            if (!(deltaTime > 0) || m_Target == null)
+            
+            if (!(deltaTime > 0))
             {
                 return;
             }
