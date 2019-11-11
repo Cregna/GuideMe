@@ -10,7 +10,7 @@ public class RandomRoadSinglePlayer : MonoBehaviour
     static Vector3 vector3 = new Vector3(0f, 0f, 0f);
     public static Quaternion rotator;
     private static Transform next_road_position;
-    private DinamicWaypoints dinamicWaypoints;
+    
     private WaypointRoute myroute;
     
     static bool flag = true;
