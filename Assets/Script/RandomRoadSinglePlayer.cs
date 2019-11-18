@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.Utility;
 
+
 public class RandomRoadSinglePlayer : MonoBehaviour
 {
     public static string direction;
@@ -10,7 +11,6 @@ public class RandomRoadSinglePlayer : MonoBehaviour
     static Vector3 vector3 = new Vector3(0f, 0f, 0f);
     public static Quaternion rotator;
     private static Transform next_road_position;
-    private DinamicWaypoints dinamicWaypoints;
     private WaypointRoute myroute;
     
     static bool flag = true;
@@ -68,7 +68,7 @@ public class RandomRoadSinglePlayer : MonoBehaviour
             RoadRotator.rotatorsingle();
             Deletewaypoints();
             setwaypoints(go.gameObject.transform.GetChild(0), go.gameObject.transform.GetChild(1));
-            myroute.UpdateNodes();
+            //myroute.UpdateNodes();
 
         }
     }
