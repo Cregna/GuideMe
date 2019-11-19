@@ -26,6 +26,7 @@ public class RoadCreation : MonoBehaviour
     float acceleration=1;
     //inrease speed 
     static float speed=1;
+   public AudioClip AudioClip;
 
     // Start is     called before the first frame update
     private void Awake()
@@ -65,94 +66,48 @@ public class RoadCreation : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.B))
             {
-                if (gameObject.transform.GetChild(0).gameObject.activeSelf == false)
-                {
-                    name_road(0);
-                    print("we here" + RandomRoadChooser.choose[0].roadName.ToString());
+                mainchange(0);
 
-                    GameObject go = ObjectPoolingManager.Instance.GetObject(RandomRoadChooser.choose[0].roadName.ToString());
-                    print("we here" + next_road_position.position);
-                    n++;
-                    go.tag = n.ToString();
-                    go.transform.position = next_road_position.position + vector3;
-                    go.transform.rotation = rotator;
-                    next_road_position.position = go.gameObject.transform.GetChild(1).position;
-
-                    DeleteRoad.CleanRoad();
-                    RoadRotator.rotator();
-
-                    currentTime = startingTime;
-                    if (acceleration <= 2.5f) {
-                        acceleration = acceleration * 1.1f;
-                    }
-                   // acceleration=
-                    flag = false;
-                    StartCoroutine(nextDelay());
-                    print(n);
-                 //   acceleration=ac
-                    if (changeRoadEvent != null)
-                        changeRoadEvent();
-                    
-                }
             }
             if (Input.GetKeyDown(KeyCode.N))
             {
-
-                if (gameObject.transform.GetChild(0).gameObject.activeSelf == false)
-                {
-                    name_road(1);
-                    print("we here" + RandomRoadChooser.choose[1].ToString());
-                    GameObject go = ObjectPoolingManager.Instance.GetObject(RandomRoadChooser.choose[1].roadName.ToString());
-                    n++;
-                    go.tag = n.ToString();
-                    go.transform.position = next_road_position.position + vector3;
-                    go.transform.rotation = rotator;
-                    next_road_position.position = go.gameObject.transform.GetChild(1).position;
-                    DeleteRoad.CleanRoad();
-                    RoadRotator.rotator();
-                    currentTime = startingTime;
-                    if (acceleration <= 2.5f)
-                    {
-                        acceleration = acceleration * 1.1f;
-                    }
-                    flag = false;
-                    StartCoroutine(nextDelay());
-                    print("Hey, carutine");
-
-                    if (changeRoadEvent != null)
-                        changeRoadEvent();
-                    
-                }
+                mainchange(1);
+                
             }
             if (Input.GetKeyDown(KeyCode.M))
             {
-
-                if (gameObject.transform.GetChild(0).gameObject.activeSelf == false)
-                {
-                    name_road(2);
-                    print("we here" + RandomRoadChooser.choose[2].ToString());
-                    GameObject go = ObjectPoolingManager.Instance.GetObject(RandomRoadChooser.choose[2].roadName.ToString());
-                    n++;
-                    go.tag = n.ToString();
-                    go.transform.position = next_road_position.position + vector3;
-                    go.transform.rotation = rotator;
-                    next_road_position.position = go.gameObject.transform.GetChild(1).position;
-                    DeleteRoad.CleanRoad();
-                    RoadRotator.rotator();
-                    currentTime = startingTime;
-                    if (acceleration <= 2.5f)
-                    {
-                        acceleration = acceleration * 1.1f;
-                    }
-
-                    flag = false;
-                    StartCoroutine(nextDelay());
-                    print(n);
-                    if (changeRoadEvent != null)
-                        changeRoadEvent();
-                    
-                }
+                mainchange(2);
+               
             }
+        }
+    }
+    public void mainchange(int i) {
+        SoundManager.instance.playSingle();
+        if (gameObject.transform.GetChild(0).gameObject.activeSelf == false)
+        {
+
+            name_road(i);
+            print("we here" + RandomRoadChooser.choose[i].ToString());
+            GameObject go = ObjectPoolingManager.Instance.GetObject(RandomRoadChooser.choose[i].roadName.ToString());
+            n++;
+            go.tag = n.ToString();
+            go.transform.position = next_road_position.position + vector3;
+            go.transform.rotation = rotator;
+            next_road_position.position = go.gameObject.transform.GetChild(1).position;
+            DeleteRoad.CleanRoad();
+            RoadRotator.rotator();
+            currentTime = startingTime;
+            if (acceleration <= 2.5f)
+            {
+                acceleration = acceleration * 1.1f;
+            }
+
+            flag = false;
+            StartCoroutine(nextDelay());
+            print(n);
+            if (changeRoadEvent != null)
+                changeRoadEvent();
+
         }
     }
 

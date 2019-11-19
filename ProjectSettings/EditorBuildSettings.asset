@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SinglePlayer.unity
     guid: 5ec1d6584b68cf048b6f63168e074109
+  - enabled: 1
+    path: Assets/Scenes/Road.unity
+    guid: 1e709c77deea3f64db66d07d84374d65
   m_configObjects: {}

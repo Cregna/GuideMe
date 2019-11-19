@@ -14,6 +14,10 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("SinglePlayer");
     }
+    public void PlayGodGame()
+    {
+        SceneManager.LoadScene("Road");
+    }
 
     public void QuitGame()
     {

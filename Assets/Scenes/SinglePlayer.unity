@@ -297,21 +297,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6901039941586614564, guid: 54339ee98cca7b94b9d7d6cc7bf2b325,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300000, guid: bff7feb686c8d5240b91db0cc5cc06b3, type: 3}
-    - target: {fileID: 935027060018415069, guid: 54339ee98cca7b94b9d7d6cc7bf2b325,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: bff7feb686c8d5240b91db0cc5cc06b3, type: 3}
-    - target: {fileID: -5420396028613268164, guid: 54339ee98cca7b94b9d7d6cc7bf2b325,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300000, guid: bff7feb686c8d5240b91db0cc5cc06b3, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54339ee98cca7b94b9d7d6cc7bf2b325, type: 3}
 --- !u!1001 &172755024
@@ -453,6 +438,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ntime: 2
+  waypoints: {fileID: 0}
   myArray:
   - {fileID: 737495032125171640, guid: 6e2eaf774f233f24e8fb550812ebdcc4, type: 3}
   - {fileID: 7255219987143255238, guid: 0a76209feff1f1940ae18d5ff5f550b1, type: 3}
