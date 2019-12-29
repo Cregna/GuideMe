@@ -51,7 +51,7 @@ public class RandomRoadChooser : MonoBehaviour
 
         choose.Clear();
 
-        List<RoadType> obj = new List<RoadType> { new RoadType("straight", straight), new RoadType("left90", left90), new RoadType("left45", left45), new RoadType("right45", right45), new RoadType("right90", right90) };
+        List<RoadType> obj = new List<RoadType> { new RoadType("straight", straight), new RoadType("left90", left90), new RoadType("left45", left45), new RoadType("right45", right45), new RoadType("right90", right90), new RoadType("dirt", straight), new RoadType("loop", straight), new RoadType("hole", straight), new RoadType("bridge", straight), new RoadType("straightsplit", straight) };
 
         for (int j = 0; j < 3; j++)
         {
