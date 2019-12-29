@@ -77,7 +77,7 @@ public class RoadRotator : MonoBehaviour
         switch (RoadCreationSingle.direction)
         {
             case "straight":
-                RoadCreation.rotator = RoadCreation.rotator * Quaternion.Euler(0, 180f, 0f);
+                RoadCreation.rotator = RoadCreation.rotator * Quaternion.Euler(0, 0f, 180f);
                 foreach (GameObject go in imageObject)
                 {
                     print(go.tag);
@@ -87,7 +87,7 @@ public class RoadRotator : MonoBehaviour
 
                 break;
             case "right45":
-                RoadCreationSingle.rotator = RoadCreationSingle.rotator * Quaternion.Euler(0, 45f, 0f);
+                RoadCreationSingle.rotator = RoadCreationSingle.rotator * Quaternion.Euler(0, 0f, 45f);
                 print("Your rotating is" + RoadCreationSingle.rotator);
                 foreach (GameObject go in imageObject)
                 {
@@ -98,7 +98,7 @@ public class RoadRotator : MonoBehaviour
 
                 break;
             case "right90":
-                RoadCreationSingle.rotator = RoadCreationSingle.rotator * Quaternion.Euler(0, 90f, 0f);
+                RoadCreationSingle.rotator = RoadCreationSingle.rotator * Quaternion.Euler(0, 0f, 90f);
                 print("Your rotating is" + RoadCreationSingle.rotator);
                 foreach (GameObject go in imageObject)
                 {
@@ -109,7 +109,7 @@ public class RoadRotator : MonoBehaviour
 
                 break;
             case "left45":
-                RoadCreationSingle.rotator = RoadCreationSingle.rotator * Quaternion.Euler(0, -45f, 0f);
+                RoadCreationSingle.rotator = RoadCreationSingle.rotator * Quaternion.Euler(0, 0f, -45f);
                 print("Your rotating is" + RoadCreationSingle.rotator);
                 foreach (GameObject go in imageObject)
                 {
@@ -120,7 +120,7 @@ public class RoadRotator : MonoBehaviour
 
                 break;
             case "left90":
-                RoadCreationSingle.rotator = RoadCreationSingle.rotator * Quaternion.Euler(0, -90f, 0f);
+                RoadCreationSingle.rotator = RoadCreationSingle.rotator * Quaternion.Euler(0, 0f, -90f);
                 print("Your rotating is" + RoadCreationSingle.rotator);
                 foreach (GameObject go in imageObject)
                 {

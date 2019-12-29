@@ -50,7 +50,7 @@ public class RoadCreationSingle : MonoBehaviour
         currentTime = startingTime;
         n = 0;
         next_road_position.position = vector3;
-       rotator= Quaternion.Euler(0f, 0f, 0f);
+       rotator= Quaternion.Euler(-90f, 0f, 90f);
         //GameObject go = ObjectPoolingManager.Instance.GetObject(straight.name);
         //go.transform.position =  vector3;
         // go.transform.rotation = Quaternion.identity;
