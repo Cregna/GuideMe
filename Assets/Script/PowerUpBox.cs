@@ -32,8 +32,11 @@ public class PowerUpBox : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        var heading  = transform.parent.GetChild(3).position - transform.parent.GetChild(2).position;
+        var distance = heading.magnitude;
+        var direction = heading / distance;
         Debug.Log("CAR ENTER");
         GameObject go = GameObject.FindGameObjectWithTag("Player"); 
-        go.GetComponent<Rigidbody>().AddForce(Vector3.forward * pushforce, ForceMode.Acceleration);
+        go.GetComponent<Rigidbody>().AddForce(direction * pushforce, ForceMode.Acceleration);
     }
 }
