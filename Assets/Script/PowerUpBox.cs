@@ -2,15 +2,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class PowerUpBox : MonoBehaviour
 {
-
+    public float percentage;
     public float pushforce;
     // Start is called before the first frame update
+
+
+
     void Start()
     {
-        
+        if (Random.value > percentage)
+        {
+            gameObject.SetActive(true);
+        }
+        else
+        { 
+            gameObject.SetActive(false);
+        }
     }
 
     // Update is called once per frame
@@ -23,6 +34,6 @@ public class PowerUpBox : MonoBehaviour
     {
         Debug.Log("CAR ENTER");
         GameObject go = GameObject.FindGameObjectWithTag("Player"); 
-        go.GetComponent<Rigidbody>().AddForce(Vector3.back * pushforce, ForceMode.Acceleration);
+        go.GetComponent<Rigidbody>().AddForce(Vector3.forward * pushforce, ForceMode.Acceleration);
     }
 }

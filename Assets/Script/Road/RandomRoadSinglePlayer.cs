@@ -153,30 +153,30 @@ public class RandomRoadSinglePlayer : MonoBehaviour
              case "Easy":
                  minSpeed = 1.0f; 
                  overTime = 90f; 
-                 maxSpeed = 1.2f; 
+                 maxSpeed = 1.5f; 
                  roadcheck = 15; 
-                 nroaddelete = 4;
+                 nroaddelete = 3;
                  break;
              case "Normal":
                  minSpeed = 1.0f; 
                  overTime = 60f; 
-                 maxSpeed = 1.2f; 
+                 maxSpeed = 1.5f; 
                  roadcheck = 15; 
-                 nroaddelete = 8;                 
+                 nroaddelete = 5;                 
                  break;
              case "Hard":
+                 minSpeed = 0.8f; 
+                 overTime = 90f; 
+                 maxSpeed = 1.4f; 
+                 roadcheck = 10; 
+                 nroaddelete = 4;                 
+                 break;
+             case "Insane":
                  minSpeed = 0.6f; 
                  overTime = 90f; 
                  maxSpeed = 1.2f; 
-                 roadcheck = 10; 
-                 nroaddelete = 5;                 
-                 break;
-             case "Insane":
-                 minSpeed = 0.4f; 
-                 overTime = 90f; 
-                 maxSpeed = 1.0f; 
                  roadcheck = 8; 
-                 nroaddelete = 5;                 
+                 nroaddelete = 4;                 
                  break;
              default:
                  minSpeed = 1.0f; 
