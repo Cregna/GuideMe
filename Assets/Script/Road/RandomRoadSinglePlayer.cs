@@ -212,5 +212,6 @@ public class RandomRoadSinglePlayer : MonoBehaviour
      private void name_road(int i)
      {
          direction= myArray[i].name.ToString();
+        print(direction);
      }
 }

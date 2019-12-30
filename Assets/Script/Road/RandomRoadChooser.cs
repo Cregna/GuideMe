@@ -51,7 +51,7 @@ public class RandomRoadChooser : MonoBehaviour
 
         choose.Clear();
 
-        List<RoadType> obj = new List<RoadType> { new RoadType("straight", straight), new RoadType("left90", left90), new RoadType("left45", left45), new RoadType("right45", right45), new RoadType("right90", right90), new RoadType("dirt", straight), new RoadType("loop", straight), new RoadType("hole", straight), new RoadType("bridge", straight), new RoadType("straightsplit", straight) };
+        List<RoadType> obj = new List<RoadType> { new RoadType("straight", "straight", straight), new RoadType("left90", "left90", left90), new RoadType("left45", "left45", left45), new RoadType("right45", "right45", right45), new RoadType("right90", "right90", right90), new RoadType("dirt", "straight", straight), new RoadType("loop", "straight", straight), new RoadType("hole", "straight", straight), new RoadType("bridge", "straight", straight), new RoadType("straightsplit", "straight", straight), new RoadType("right_tunnel45", "right45", right45), new RoadType("right_tunnel90", "right90", right90), new RoadType("left_tunnel45", "left45", left45), new RoadType("left_tunnel90", "left90", left90) };
 
         for (int j = 0; j < 3; j++)
         {
@@ -60,7 +60,7 @@ public class RandomRoadChooser : MonoBehaviour
            
             index = Random.Range(0, (obj.Count));
           
-            choose.Add(new RoadType(obj[index].roadName, obj[index].icon));
+            choose.Add(new RoadType(obj[index].roadName, obj[index].roadType, obj[index].icon));
 
             obj.RemoveAt(index);
 

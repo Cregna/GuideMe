@@ -158,6 +158,7 @@ public class RoadCreationSingle : MonoBehaviour
     }
     private void name_road(int i)
     {
-       direction= RandomRoadChooser.choose[i].roadName.ToString();
+       direction= RandomRoadChooser.choose[i].roadType.ToString();
+        print(direction);
     }
 }

@@ -157,17 +157,21 @@ public class RoadRotator : MonoBehaviour
                 RandomRoadSinglePlayer.rotator = RandomRoadSinglePlayer.rotator * Quaternion.Euler(0, 0f, -90f);
                 break;
             
-            case "left45tunnel":
+            case "left_tunnel45":
                 RandomRoadSinglePlayer.rotator = RandomRoadSinglePlayer.rotator * Quaternion.Euler(0, 0f, -45f);
+                print("lol");
                 break;
-            case "left90tunnel":
+            case "left_tunnel90":
                 RandomRoadSinglePlayer.rotator = RandomRoadSinglePlayer.rotator * Quaternion.Euler(0, 0f, -90f);
+                print("lol");
                 break;
-            case "right90tunnel":
+            case "right_tunnel90":
                 RandomRoadSinglePlayer.rotator = RandomRoadSinglePlayer.rotator * Quaternion.Euler(0, 0f, 90f);
+                print("lol");
                 break;
-            case "right45tunnel":
-                RandomRoadSinglePlayer.rotator = RandomRoadSinglePlayer.rotator * Quaternion.Euler(0, 0f, -45f);
+            case "right_tunnel45":
+                RandomRoadSinglePlayer.rotator = RandomRoadSinglePlayer.rotator * Quaternion.Euler(0, 0f, 45f);
+                print("lol");
                 break;
 
         }
