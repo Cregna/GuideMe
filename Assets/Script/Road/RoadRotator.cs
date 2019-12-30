@@ -140,21 +140,21 @@ public class RoadRotator : MonoBehaviour
                 RandomRoadSinglePlayer.rotator = RandomRoadSinglePlayer.rotator * Quaternion.Euler(0, 0f, 0f);
                 break;
             case "right45":
-                RandomRoadSinglePlayer.rotator = RandomRoadSinglePlayer.rotator * Quaternion.Euler(0, 45f, 0f);
+                RandomRoadSinglePlayer.rotator = RandomRoadSinglePlayer.rotator * Quaternion.Euler(0, 0f, 45f);
 
 
                 break;
             case "right90":
-                RandomRoadSinglePlayer.rotator = RandomRoadSinglePlayer.rotator* Quaternion.Euler(0, 90f, 0f);
+                RandomRoadSinglePlayer.rotator = RandomRoadSinglePlayer.rotator* Quaternion.Euler(0, 0f, 90f);
                
 
                 break;
             case "left45":
-                RandomRoadSinglePlayer.rotator = RandomRoadSinglePlayer.rotator * Quaternion.Euler(0, -45f, 0f);
+                RandomRoadSinglePlayer.rotator = RandomRoadSinglePlayer.rotator * Quaternion.Euler(0, 0f, -45f);
          
                 break;
             case "left90":
-                RandomRoadSinglePlayer.rotator = RandomRoadSinglePlayer.rotator * Quaternion.Euler(0, -90f, 0f);
+                RandomRoadSinglePlayer.rotator = RandomRoadSinglePlayer.rotator * Quaternion.Euler(0, 0f, -90f);
                
 
                 break;

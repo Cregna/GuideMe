@@ -394,12 +394,18 @@ MonoBehaviour:
   Score: {fileID: 1152371745}
   Highscore: {fileID: 773025517}
   next_road_position: {fileID: 1589937482}
-  straight: {fileID: 1496659782580613377, guid: 54339ee98cca7b94b9d7d6cc7bf2b325,
+  straight: {fileID: 2252933176252536379, guid: ae40637a19ff23640876c50663a0672c,
     type: 3}
-  right45: {fileID: 2411857008875338711, guid: f6a7db5b430d4014a82ee956ba25cebe, type: 3}
-  right90: {fileID: 8883801047885477402, guid: 520c54d12c59af243948cb0f92c4b905, type: 3}
-  left45: {fileID: 737495032125171640, guid: 6e2eaf774f233f24e8fb550812ebdcc4, type: 3}
-  left90: {fileID: 7255219987143255238, guid: 0a76209feff1f1940ae18d5ff5f550b1, type: 3}
+  right45: {fileID: 4951496528264523203, guid: 92af236addf43ae4ba2e2cf7d9aa20ae, type: 3}
+  right90: {fileID: 4555737763162132315, guid: c31047094d66d6641a97c28cc134bcc2, type: 3}
+  left45: {fileID: 888005369223639785, guid: e23fdb5757b8036489a3ec80965c5974, type: 3}
+  left90: {fileID: 1195071845565740352, guid: 63bc09a76fc8801419393e1d65684ce5, type: 3}
+  straightsplit: {fileID: 6924320216230984697, guid: 8edf2a4719ab36148a909fc1ca7f2c70,
+    type: 3}
+  loop: {fileID: 7766342920189272039, guid: 0edfee0126b226144bb040dac32da37a, type: 3}
+  bridge: {fileID: 4920310829372431531, guid: e698a14bed30b59439f85330573a5c47, type: 3}
+  dirt: {fileID: 8370235227503707009, guid: 117075b18cbdc7d419376d7767df8c06, type: 3}
+  hole: {fileID: 5775620910278384842, guid: a3a71211293b53a4482079f7d907944a, type: 3}
   plane: {fileID: 0}
 --- !u!4 &242349324
 Transform:
@@ -1628,11 +1634,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3629319901892110074, guid: df6ad9851c2c20245a543fba25b9b330,
-        type: 3}
-      propertyPath: m_Name
-      value: CarCameraRig
-      objectReference: {fileID: 0}
     - target: {fileID: 3629319901892110022, guid: df6ad9851c2c20245a543fba25b9b330,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1687,6 +1688,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629319901892110074, guid: df6ad9851c2c20245a543fba25b9b330,
+        type: 3}
+      propertyPath: m_Name
+      value: CarCameraRig
       objectReference: {fileID: 0}
     - target: {fileID: 3629319901892110075, guid: df6ad9851c2c20245a543fba25b9b330,
         type: 3}
@@ -2104,7 +2110,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.000011444, y: -29.6}
+  m_AnchoredPosition: {x: -0.000011444, y: -29.599976}
   m_SizeDelta: {x: 186.02, y: 41.15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1491501130
@@ -2685,11 +2691,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1496659782580613377, guid: d4f42e3795b2ca54da6dd459b2f3a4b9,
-        type: 3}
-      propertyPath: m_Name
-      value: Start
-      objectReference: {fileID: 0}
     - target: {fileID: -9067364901180016694, guid: d4f42e3795b2ca54da6dd459b2f3a4b9,
         type: 3}
       propertyPath: viewIdField
@@ -2729,6 +2730,11 @@ PrefabInstance:
         type: 3}
       propertyPath: fadeaway
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1496659782580613377, guid: d4f42e3795b2ca54da6dd459b2f3a4b9,
+        type: 3}
+      propertyPath: m_Name
+      value: Start
       objectReference: {fileID: 0}
     - target: {fileID: 2494552174550467346, guid: d4f42e3795b2ca54da6dd459b2f3a4b9,
         type: 3}

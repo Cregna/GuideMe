@@ -39,7 +39,7 @@ public class RandomRoadSinglePlayer : MonoBehaviour
         elapsed = Time.timeSinceLevelLoad;
         time = Time.time;
         next_road_position.position = vector3;
-        rotator = Quaternion.Euler(0f, 0f, 0f);
+        rotator = Quaternion.Euler(-90f, 0f, 90f);
         //        _tr.GetComponents<Transform>();
         roadss = new List<GameObject>();
         currentspawn = maxSpeed;
