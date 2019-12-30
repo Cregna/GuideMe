@@ -124,7 +124,7 @@ public class RandomRoadSinglePlayer : MonoBehaviour
          // Vector3 forward = transform.TransformDirection(Vector3.forward) * 50;
          //forward = Quaternion.Euler(direction) * forward;
          Debug.DrawRay(pre.transform.GetChild(2).position, direction, Color.green, 10);
-         if (Physics.Raycast(pre.transform.GetChild(2).position, direction, out hit,70f))
+         if (Physics.SphereCast(pre.transform.GetChild(2).position,20f, direction, out hit,70f))
          {
              print("Found an object - distance: " + hit.distance);
              return true;
