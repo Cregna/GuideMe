@@ -25,6 +25,13 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] private GameObject bridge;
     [SerializeField] private GameObject dirt;
     [SerializeField] private GameObject hole;
+    [SerializeField] private GameObject right45tunnel;
+    [SerializeField] private GameObject right90tunnel;
+    [SerializeField] private GameObject left45tunnel;
+    [SerializeField] private GameObject left90tunnel;
+    
+    [SerializeField] private GameObject tramp;
+
     [SerializeField] private GameObject plane;
 
     private bool first;
@@ -42,7 +49,13 @@ public class GameManager : Singleton<GameManager>
         ObjectPoolingManager.Instance.CreatePool(dirt, 15, 20);
         ObjectPoolingManager.Instance.CreatePool(bridge, 15, 20);
         ObjectPoolingManager.Instance.CreatePool(loop, 15, 20);
+        ObjectPoolingManager.Instance.CreatePool(tramp, 15, 20);
+        ObjectPoolingManager.Instance.CreatePool(left45tunnel, 15, 20);
+        ObjectPoolingManager.Instance.CreatePool(left90tunnel, 15, 20);
+        ObjectPoolingManager.Instance.CreatePool(right45tunnel, 15, 20);
+        ObjectPoolingManager.Instance.CreatePool(right90tunnel, 15, 20);
         ObjectPoolingManager.Instance.CreatePool(plane, 3000, 5300);
+
 
     }
     //    ObjectPoolingManager.Instance.CreatePool(m_bullet, 50, 50);
