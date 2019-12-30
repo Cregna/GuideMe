@@ -68,10 +68,10 @@ public class RandomRoadSinglePlayer : MonoBehaviour
         {
             bool flag = true;
             //int value = checkcurve();
-            int value = UnityEngine.Random.Range(0, 5);
+            int value = UnityEngine.Random.Range(0, 10);
             while (flag)
             {
-                value = UnityEngine.Random.Range(0, 5);
+                value = UnityEngine.Random.Range(0, 10);
                 GameObject pre = myArray[value];
                 if (checkcollision(pre))
                 {
