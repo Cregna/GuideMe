@@ -124,7 +124,7 @@ public class RandomRoadSinglePlayer : MonoBehaviour
          // Vector3 forward = transform.TransformDirection(Vector3.forward) * 50;
          //forward = Quaternion.Euler(direction) * forward;
          Debug.DrawRay(pre.transform.GetChild(2).position, direction, Color.green, 10);
-         if (Physics.Raycast(pre.transform.GetChild(2).position, direction, out hit,70f))
+         if (Physics.SphereCast(pre.transform.GetChild(2).position,20f, direction, out hit,70f))
          {
              print("Found an object - distance: " + hit.distance);
              return true;
@@ -151,32 +151,32 @@ public class RandomRoadSinglePlayer : MonoBehaviour
          switch (Diffulty.Difficulty)
          {
              case "Easy":
-                 minSpeed = 1.0f; 
+                 minSpeed = 1.5f; 
                  overTime = 90f; 
-                 maxSpeed = 1.2f; 
+                 maxSpeed = 2.5f; 
                  roadcheck = 15; 
-                 nroaddelete = 4;
+                 nroaddelete = 3;
                  break;
              case "Normal":
-                 minSpeed = 1.0f; 
+                 minSpeed = 1.5f; 
                  overTime = 60f; 
-                 maxSpeed = 1.2f; 
+                 maxSpeed = 2.5f; 
                  roadcheck = 15; 
-                 nroaddelete = 8;                 
+                 nroaddelete = 5;                 
                  break;
              case "Hard":
-                 minSpeed = 0.6f; 
+                 minSpeed = 1.0f; 
                  overTime = 90f; 
-                 maxSpeed = 1.2f; 
+                 maxSpeed = 2.0f; 
                  roadcheck = 10; 
-                 nroaddelete = 5;                 
+                 nroaddelete = 4;                 
                  break;
              case "Insane":
-                 minSpeed = 0.4f; 
+                 minSpeed = 0.8f; 
                  overTime = 90f; 
-                 maxSpeed = 1.0f; 
+                 maxSpeed = 1.5f; 
                  roadcheck = 8; 
-                 nroaddelete = 5;                 
+                 nroaddelete = 3;                 
                  break;
              default:
                  minSpeed = 1.0f; 
