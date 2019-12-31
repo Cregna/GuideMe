@@ -94,6 +94,12 @@ public class RoadCreationSingle : MonoBehaviour
         }
     }
     public void mainchange(int i) {
+        GameObject[] del = GameObject.FindGameObjectsWithTag("chooser");
+        foreach (GameObject ro in del)
+        {
+            ro.SetActive(false);
+            ro.tag = "Untagged";
+        }
         SoundManager.instance.playSingle();
         if (gameObject.transform.GetChild(0).gameObject.activeSelf == false)
         {
@@ -121,10 +127,12 @@ public class RoadCreationSingle : MonoBehaviour
             }
 
             flag = false;
+            
             StartCoroutine(nextDelay());
             print(n);
             if (changeRoadEvent != null)
                 changeRoadEvent();
+
 
         }
     }

@@ -12,7 +12,7 @@ public class RandomRoadChooser : MonoBehaviour
     public Sprite left90;
     public Sprite left45;
     public Sprite straight;
-
+    Vector3[] positionArray = new[] { new Vector3(1449.4f, 2201.7f, -2943.6f), new Vector3(1650.3f, 2201.7f, -2943.6f), new Vector3(1800.4f, 2201.7f, -2943.6f) };
     int index;
     
    public static List<RoadType> choose = new List<RoadType>();
@@ -39,6 +39,7 @@ public class RandomRoadChooser : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+       
         chooseNewRoad();
     }
 
@@ -61,6 +62,18 @@ public class RandomRoadChooser : MonoBehaviour
             index = Random.Range(0, (obj.Count));
           
             choose.Add(new RoadType(obj[index].roadName, obj[index].roadType, obj[index].icon));
+            print(obj[index].roadName);
+            GameObject go = ObjectPoolingManager.Instance.GetObject(obj[index].roadName);
+            print(go.gameObject.name);
+            print(positionArray[j]);
+            print(RoadCreationSingle.rotator);
+            print(RoadCreation.rotator);
+
+            //n++;
+            //go.tag = n.ToString();
+            go.transform.position = positionArray[j];
+            go.tag = "chooser";
+            go.transform.rotation = RoadCreationSingle.rotator;
 
             obj.RemoveAt(index);
 
