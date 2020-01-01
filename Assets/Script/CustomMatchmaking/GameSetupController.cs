@@ -19,7 +19,7 @@ public class GameSetupController : MonoBehaviour
         string role = Testmulplayer.Role;
         if (role.Equals("DRIVER"))
         {
-            PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "Car"), new Vector3(0, 0.1f, 13), new Quaternion(0, 180, 0, 0));
+            PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "Car02"), new Vector3(0, 0.1f, -20), new Quaternion(0, 0, 0, 0));
             PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "CarCameraRig"), new Vector3(0, 0, 0), new Quaternion(0, 0, 0, 0));
         }
        else 

@@ -19,11 +19,6 @@ public class RoadCreation : MonoBehaviour
     private PhotonView myPhotonView;
     private static  Transform next_road_position;
     public float timeToLive;
-    public GameObject straight;
-    public GameObject right45;
-    public GameObject right90;
-    public GameObject left45;
-    public GameObject left90;
     private List<GameObject> roadss;
     private List<GameObject> roadss2;
     private List<float> timers;
@@ -86,7 +81,7 @@ public class RoadCreation : MonoBehaviour
             time = Time.timeSinceLevelLoad;
             n = 0;
             next_road_position.position = vector3;
-            rotator = Quaternion.Euler(0f, 0f, 0f);
+            rotator= Quaternion.Euler(-90f, 0f, 90f);
             //GameObject go = ObjectPoolingManager.Instance.GetObject(straight.name);
             //go.transform.position =  vector3;
             // go.transform.rotation = Quaternion.identity;
@@ -173,6 +168,12 @@ public class RoadCreation : MonoBehaviour
     
 
     public void mainchange(int i) {
+        GameObject[] del = GameObject.FindGameObjectsWithTag("chooser");
+        foreach (GameObject ro in del)
+        {
+            ro.SetActive(false);
+            ro.tag = "Untagged";
+        }
         SoundManager.instance.playSingle();
         if (gameObject.transform.GetChild(0).gameObject.activeSelf == false)
         {

@@ -19,7 +19,7 @@ public class RoadRotator : MonoBehaviour
         GameObject[] imageObject = GameObject.FindGameObjectsWithTag("image");
         switch (RoadCreation.direction) {
             case "straight":
-                RoadCreation.rotator = RoadCreation.rotator * Quaternion.Euler(0, 0f, 0f);
+                RoadCreation.rotator = RoadCreation.rotator * Quaternion.Euler(0, 0f, 0);
                 foreach (GameObject go in imageObject) {
                     print(go.tag);
                     print(go.ToString());
@@ -28,7 +28,7 @@ public class RoadRotator : MonoBehaviour
                 
                 break;
             case "right45":
-                RoadCreation.rotator = RoadCreation.rotator * Quaternion.Euler(0, 45f, 0f);
+                RoadCreation.rotator = RoadCreation.rotator * Quaternion.Euler(0, 0f, 45f);
                 print("Your rotating is"+RoadCreation.rotator);
                 foreach (GameObject go in imageObject)
                 {
@@ -39,7 +39,7 @@ public class RoadRotator : MonoBehaviour
 
                 break;
             case "right90":
-                RoadCreation.rotator = RoadCreation.rotator* Quaternion.Euler(0, 90f, 0f);
+                RoadCreation.rotator = RoadCreation.rotator* Quaternion.Euler(0, 0, 90f);
                 print("Your rotating is" + RoadCreation.rotator);
                 foreach (GameObject go in imageObject)
                 {
@@ -50,7 +50,7 @@ public class RoadRotator : MonoBehaviour
 
                 break;
             case "left45":
-                RoadCreation.rotator = RoadCreation.rotator * Quaternion.Euler(0, -45f, 0f);
+                RoadCreation.rotator = RoadCreation.rotator * Quaternion.Euler(0, 0, -45f);
                 print("Your rotating is" + RoadCreation.rotator);
                 foreach (GameObject go in imageObject)
                 {
@@ -61,7 +61,7 @@ public class RoadRotator : MonoBehaviour
 
                 break;
             case "left90":
-                RoadCreation.rotator = RoadCreation.rotator * Quaternion.Euler(0, -90f, 0f);
+                RoadCreation.rotator = RoadCreation.rotator * Quaternion.Euler(0, 0, -90f);
                 print("Your rotating is" + RoadCreation.rotator);
                 foreach (GameObject go in imageObject)
                 {
@@ -71,13 +71,29 @@ public class RoadRotator : MonoBehaviour
                 }
 
                 break;
+            case "left_tunnel45":
+                RoadCreation.rotator = RoadCreation.rotator * Quaternion.Euler(0, 0f, -45f);
+                print("lol");
+                break;
+            case "left_tunnel90":
+                RoadCreation.rotator = RoadCreation.rotator * Quaternion.Euler(0, 0f, -90f);
+                print("lol");
+                break;
+            case "right_tunnel90":
+                RoadCreation.rotator = RoadCreation.rotator * Quaternion.Euler(0, 0f, 90f);
+                print("lol");
+                break;
+            case "right_tunnel45":
+                RoadCreation.rotator = RoadCreation.rotator * Quaternion.Euler(0, 0f, 45f);
+                print("lol");
+                break;
 
         }
 
         switch (RoadCreationSingle.direction)
         {
             case "straight":
-                RoadCreation.rotator = RoadCreation.rotator * Quaternion.Euler(0, 0f, 180f);
+                RoadCreationSingle.rotator = RoadCreation.rotator * Quaternion.Euler(0, 0f, 180f);
                 foreach (GameObject go in imageObject)
                 {
                     print(go.tag);

@@ -73,7 +73,7 @@ public class RandomRoadChooser : MonoBehaviour
             //go.tag = n.ToString();
             go.transform.position = positionArray[j];
             go.tag = "chooser";
-            go.transform.rotation = RoadCreationSingle.rotator;
+            go.transform.rotation = RoadCreation.rotator;
 
             obj.RemoveAt(index);
 
