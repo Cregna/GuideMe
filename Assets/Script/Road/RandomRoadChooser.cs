@@ -12,9 +12,10 @@ public class RandomRoadChooser : MonoBehaviour
     public Sprite left90;
     public Sprite left45;
     public Sprite straight;
+    float percentage = 0.8f;
     Vector3[] positionArray = new[] { new Vector3(1449.4f, 2201.7f, -2943.6f), new Vector3(1650.3f, 2201.7f, -2943.6f), new Vector3(1800.4f, 2201.7f, -2943.6f) };
     int index;
-    
+    public static bool spdup=false;
    public static List<RoadType> choose = new List<RoadType>();
 
 
@@ -22,6 +23,7 @@ public class RandomRoadChooser : MonoBehaviour
     {
         RoadCreation.changeRoadEvent += chooseNewRoad;
         RoadCreationSingle.changeRoadEvent += chooseNewRoad;
+        
 
     }
 
@@ -74,7 +76,32 @@ public class RandomRoadChooser : MonoBehaviour
             go.transform.position = positionArray[j];
             go.tag = "chooser";
             go.transform.rotation = RoadCreation.rotator;
+            GameObject textui = GameObject.Find("Text"+j);
+            print(textui.ToString());
+            print(Random.value);
+            if (Random.value > percentage)
+            {
+                go.gameObject.transform.GetChild(1).gameObject.SetActive(true);
+               
+                print(go.gameObject.transform.GetChild(1).gameObject.active);
+               
+            }
+            else
+            {
+                print(go.gameObject.transform.GetChild(1));
+                go.gameObject.transform.GetChild(1).gameObject.SetActive(false);
+                print(go.gameObject.transform.GetChild(1).gameObject.active);
+                
+            }
+            textui.GetComponent<UnityEngine.UI.Text>().text = "Normalooo";
+            textui.GetComponent<UnityEngine.UI.Text>().color = Color.white;
+            print("GGGGGGGGGGGGGGGG"+ go.gameObject.transform.GetChild(1));
 
+            if (go.gameObject.transform.GetChild(1).gameObject.active == true) {
+                textui.GetComponent<UnityEngine.UI.Text>().text = "Speed Up";
+                textui.GetComponent<UnityEngine.UI.Text>().color = Color.blue;
+                spdup = true;
+            }
             obj.RemoveAt(index);
 
 

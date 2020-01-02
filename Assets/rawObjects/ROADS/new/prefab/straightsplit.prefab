@@ -72,6 +72,7 @@ GameObject:
   - component: {fileID: 3105372591286203356}
   - component: {fileID: 8657315415377235749}
   - component: {fileID: -5895364200334629385}
+  - component: {fileID: 8273290724113043887}
   m_Layer: 0
   m_Name: straightsplit
   m_TagString: Untagged
@@ -159,6 +160,21 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: -5395582760244232606, guid: 2131eb4066be3994aa18ab7f72e65fea, type: 3}
+--- !u!114 &8273290724113043887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6924320216230984697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 378fe7fd5b0e93c4d9b7fb6336d97a51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  percentage: 0.8
+  pushforce: -40
+  txtui: 0
 --- !u!1 &7086612820739595358
 GameObject:
   m_ObjectHideFlags: 0
@@ -170,7 +186,6 @@ GameObject:
   - component: {fileID: 3365771143635512052}
   - component: {fileID: 7277386419991548873}
   - component: {fileID: 5338701112089773020}
-  - component: {fileID: 2572224316094900359}
   - component: {fileID: 6781745293008271253}
   m_Layer: 0
   m_Name: PowerUp
@@ -255,20 +270,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2572224316094900359
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7086612820739595358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 378fe7fd5b0e93c4d9b7fb6336d97a51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  percentage: 0.8
-  pushforce: -40
 --- !u!65 &6781745293008271253
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -8,20 +8,30 @@ public class PowerUpBox : MonoBehaviour
 {
     public float percentage;
     public float pushforce;
+    public bool txtui;
+    int n = 0;
+    public delegate void ChangeText();
+    public static event ChangeText changetext;
+    public delegate void ChangeText2();
+    public static event ChangeText2 changetext2;
     // Start is called before the first frame update
 
 
 
     void Start()
     {
-        if (Random.value > percentage)
+
+
+        print("sSAAAAAAAAAAAAAAAAAAAAAA" + RandomRoadChooser.spdup);
+        n++;
+      
+        if ((RandomRoadChooser.spdup == true)&&(n==3))
         {
-            gameObject.SetActive(true);
+            gameObject.transform.GetChild(1).gameObject.SetActive(true);
+            print(gameObject.transform.GetChild(1).gameObject.active);
+            n = 0;
         }
-        else
-        { 
-            gameObject.SetActive(false);
-        }
+  
     }
 
     // Update is called once per frame
