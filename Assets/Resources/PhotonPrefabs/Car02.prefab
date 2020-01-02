@@ -15964,6 +15964,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c241727a8fc83048b56bdd0b450f8fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  photon: 1
   isPlayer: 1
   throttleInput: Vertical
   brakeInput: Fire3
