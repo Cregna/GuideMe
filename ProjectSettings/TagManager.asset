@@ -13,6 +13,9 @@ TagManager:
   - gameover
   - car-camera-rig
   - chooser
+  - spawn1
+  - spawn2
+  - spawn3
   layers:
   - Default
   - TransparentFX

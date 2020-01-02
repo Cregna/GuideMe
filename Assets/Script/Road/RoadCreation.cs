@@ -112,10 +112,17 @@ public class RoadCreation : MonoBehaviour
                 if (timers[i] <= 3f)
                 {
                     Material[] materials = roadss2[i].GetComponent<Renderer>().materials;
-                    materials[0].color = Color.Lerp(startColor, endColor, Mathf.PingPong(Time.time,1f));
+                    if (materials.Length > 1)
+                    {
+                        materials[0].color = Color.Lerp(startColor, endColor, Mathf.PingPong(Time.time,1f));
 //                    materials[1].color = Color.Lerp(Color.gray, Color.black, Mathf.PingPong(Time.time,1f));
-                    materials[2].color = Color.Lerp(startColor, endColor, Mathf.PingPong(Time.time,1f));
+                        materials[2].color = Color.Lerp(startColor, endColor, Mathf.PingPong(Time.time,1f));
+                    }
+                    else
+                    {
+                        materials[0].color = Color.Lerp(startColor, endColor, Mathf.PingPong(Time.time,1f));
 
+                    }
                 }
                 
                 if (timers[i] <= 0f)

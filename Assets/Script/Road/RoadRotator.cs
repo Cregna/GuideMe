@@ -87,13 +87,34 @@ public class RoadRotator : MonoBehaviour
                 RoadCreation.rotator = RoadCreation.rotator * Quaternion.Euler(0, 0f, 45f);
                 print("lol");
                 break;
+            case "loop":
+                RoadCreation.rotator = RoadCreation.rotator * Quaternion.Euler(0, 0f, 0);
+                print("lol");
+                break;
+            case "bridge":
+                RoadCreation.rotator = RoadCreation.rotator * Quaternion.Euler(0, 0f, 0);
+                print("lol");
+                break;
+            case "straightsplit":
+                RoadCreation.rotator = RoadCreation.rotator * Quaternion.Euler(0, 0f, 0);
+                print("lol");
+                break;
+            case "dirt":
+                RoadCreation.rotator = RoadCreation.rotator * Quaternion.Euler(0, 0f, 0);
+                print("lol");
+                break;
+            case "hole":
+                RoadCreation.rotator = RoadCreation.rotator * Quaternion.Euler(0, 0f, 0);
+                print("lol");
+                break;
+            
 
         }
 
         switch (RoadCreationSingle.direction)
         {
             case "straight":
-                RoadCreationSingle.rotator = RoadCreation.rotator * Quaternion.Euler(0, 0f, 180f);
+                RoadCreationSingle.rotator = RoadCreationSingle.rotator * Quaternion.Euler(0, 0, 0);
                 foreach (GameObject go in imageObject)
                 {
                     print(go.tag);
@@ -146,6 +167,24 @@ public class RoadRotator : MonoBehaviour
                 }
 
                 break;
+            
+            case "left_tunnel45":
+                RoadCreationSingle.rotator = RoadCreationSingle.rotator * Quaternion.Euler(0, 0f, -45f);
+                print("lol");
+                break;
+            case "left_tunnel90":
+                RoadCreationSingle.rotator = RoadCreationSingle.rotator * Quaternion.Euler(0, 0f, -90f);
+                print("lol");
+                break;
+            case "right_tunnel90":
+                RoadCreationSingle.rotator = RoadCreationSingle.rotator * Quaternion.Euler(0, 0f, 90f);
+                print("lol");
+                break;
+            case "right_tunnel45":
+                RoadCreationSingle.rotator = RoadCreationSingle.rotator * Quaternion.Euler(0, 0f, 45f);
+                print("lol");
+                break;
+        
 
         }
     }
