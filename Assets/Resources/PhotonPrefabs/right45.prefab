@@ -72,13 +72,14 @@ GameObject:
   - component: {fileID: 3763684904828549550}
   - component: {fileID: 4206524720501525697}
   - component: {fileID: 6226912772328665094}
+  - component: {fileID: 970505151521233526}
   m_Layer: 0
   m_Name: PowerUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &9120999537323869937
 RectTransform:
   m_ObjectHideFlags: 0
@@ -168,6 +169,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.1199994, y: 5.12, z: 8.022602}
   m_Center: {x: 0.0000075443477, y: -0.0000019832237, z: 1.348824}
+--- !u!114 &970505151521233526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3796904632743838608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d79b7c6f1ba4484b98ca9d030b83dbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pushforce: 40
 --- !u!1 &4951496528264523203
 GameObject:
   m_ObjectHideFlags: 0
@@ -282,8 +296,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 378fe7fd5b0e93c4d9b7fb6336d97a51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  percentage: 0.8
-  pushforce: 40
   txtui: 0
 --- !u!114 &-2107501739007043990
 MonoBehaviour:

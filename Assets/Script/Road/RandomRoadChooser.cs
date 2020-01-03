@@ -22,7 +22,7 @@ public class RandomRoadChooser : MonoBehaviour
     private void OnEnable()
     {
         RoadCreation.changeRoadEvent += chooseNewRoad;
-        RoadCreationSingle.changeRoadEvent += chooseNewRoad;
+       // RoadCreationSingle.changeRoadEvent += chooseNewRoad;
         
 
     }
@@ -30,7 +30,7 @@ public class RandomRoadChooser : MonoBehaviour
     private void OnDisable()
     {
         RoadCreation.changeRoadEvent -= chooseNewRoad;
-        RoadCreationSingle.changeRoadEvent -= chooseNewRoad;
+        //RoadCreationSingle.changeRoadEvent -= chooseNewRoad;
     }
 
     void DoStuff() {
@@ -93,12 +93,12 @@ public class RandomRoadChooser : MonoBehaviour
                 print(go.gameObject.transform.GetChild(1).gameObject.active);
                 
             }
-            textui.GetComponent<UnityEngine.UI.Text>().text = "Normalooo";
+            textui.GetComponent<UnityEngine.UI.Text>().text = "Normal";
             textui.GetComponent<UnityEngine.UI.Text>().color = Color.white;
             print("GGGGGGGGGGGGGGGG"+ go.gameObject.transform.GetChild(1));
 
             if (go.gameObject.transform.GetChild(1).gameObject.active == true) {
-                textui.GetComponent<UnityEngine.UI.Text>().text = "Speed Up";
+                textui.GetComponent<UnityEngine.UI.Text>().text = "Speed";
                 textui.GetComponent<UnityEngine.UI.Text>().color = Color.blue;
                 spdup = true;
             }

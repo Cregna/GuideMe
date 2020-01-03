@@ -38,5 +38,7 @@ MonoBehaviour:
   - CanStart
   - OnExitRPC
   - RetryRPC
+  - setPowerUp
+  - name_road
   DisableAutoOpenWizard: 1
   ShowSettings: 1

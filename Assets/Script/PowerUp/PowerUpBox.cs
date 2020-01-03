@@ -1,26 +1,28 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Photon.Pun;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 public class PowerUpBox : MonoBehaviour
 {
-    public float percentage;
-    public float pushforce;
+
     public bool txtui;
     int n = 0;
     public delegate void ChangeText();
     public static event ChangeText changetext;
     public delegate void ChangeText2();
     public static event ChangeText2 changetext2;
+    private PhotonView photonView;
+
     // Start is called before the first frame update
 
-
-
+    
     void Start()
     {
 
+        photonView = PhotonView.Get(this);
 
         print("sSAAAAAAAAAAAAAAAAAAAAAA" + RandomRoadChooser.spdup);
         n++;
@@ -34,19 +36,13 @@ public class PowerUpBox : MonoBehaviour
   
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
-    private void OnTriggerEnter(Collider other)
+
+    [PunRPC]
+    private void setPowerUp()
     {
-        var heading  = transform.parent.GetChild(3).position - transform.parent.GetChild(2).position;
-        var distance = heading.magnitude;
-        var direction = heading / distance;
-        Debug.Log("CAR ENTER");
-        GameObject go = GameObject.FindGameObjectWithTag("Player"); 
-        go.GetComponent<Rigidbody>().AddForce(direction * pushforce, ForceMode.Acceleration);
+        Debug.Log(" TRY TO CHANGE PROPERTY");
+        gameObject.transform.GetChild(1).gameObject.SetActive(true);
     }
+    
 }

@@ -176,6 +176,7 @@ public class RoadCreation : MonoBehaviour
 
     public void mainchange(int i) {
         GameObject[] del = GameObject.FindGameObjectsWithTag("chooser");
+        RandomRoadChooser.spdup = false;
         foreach (GameObject ro in del)
         {
             ro.SetActive(false);
@@ -191,6 +192,10 @@ public class RoadCreation : MonoBehaviour
                     Path.Combine("PhotonPrefabs", RandomRoadChooser.choose[i].roadName.ToString()),
                     next_road_position.position + vector3, rotator);
             GameObject go2=   ObjectPoolingManager.Instance.GetObject(RandomRoadChooser.choose[i].roadName.ToString());
+            if (go2.gameObject.transform.GetChild(1).gameObject.active)
+            {
+                go.GetPhotonView().RPC("setPowerUp", RpcTarget.All);
+            }
             roadss.Add(go);
             roadss2.Add(go2);
             timers.Add(timeToLive);
@@ -239,6 +244,8 @@ public class RoadCreation : MonoBehaviour
             roadss2.RemoveRange(0,delete);
         }
     }
+    
+
     
     private void name_road(int i)
     {

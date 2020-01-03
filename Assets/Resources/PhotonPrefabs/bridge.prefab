@@ -104,6 +104,7 @@ GameObject:
   - component: {fileID: 7050229574302491842}
   - component: {fileID: -6295910000728775378}
   - component: {fileID: 663351096482991497}
+  - component: {fileID: 4829739806064857251}
   m_Layer: 0
   m_Name: bridge
   m_TagString: Untagged
@@ -228,6 +229,19 @@ MonoBehaviour:
   m_SynchronizePosition: 1
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
+--- !u!114 &4829739806064857251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4920310829372431531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 378fe7fd5b0e93c4d9b7fb6336d97a51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  txtui: 0
 --- !u!1 &5032431215822953881
 GameObject:
   m_ObjectHideFlags: 0
@@ -240,13 +254,14 @@ GameObject:
   - component: {fileID: 2301157404812514822}
   - component: {fileID: 7520939944708203574}
   - component: {fileID: 1401151678358680331}
+  - component: {fileID: 4966543442696744929}
   m_Layer: 0
   m_Name: PowerUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2940527780963953809
 RectTransform:
   m_ObjectHideFlags: 0
@@ -336,3 +351,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.1199994, y: 5.12, z: 8.022602}
   m_Center: {x: 0.0000075443477, y: -0.0000019832237, z: 1.348824}
+--- !u!114 &4966543442696744929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5032431215822953881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d79b7c6f1ba4484b98ca9d030b83dbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pushforce: 40
