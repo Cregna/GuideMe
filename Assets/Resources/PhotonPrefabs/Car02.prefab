@@ -16046,15 +16046,15 @@ MonoBehaviour:
     m_RotationOrder: 4
   diffGearing: 10
   brakeForce: 2000
-  steerAngle: 35
-  steerSpeed: 0.4
+  steerAngle: 45
+  steerSpeed: 0.7
   jumpVel: 1.5
   driftIntensity: 1
   centerOfMass: {fileID: 4571827898238943966}
   downforce: 2.18
   handbrake: 0
   allowDrift: 1
-  speed: 20
+  speed: 200
   gasParticles:
   - {fileID: 4457737279765996562}
   - {fileID: 4441555371016877302}

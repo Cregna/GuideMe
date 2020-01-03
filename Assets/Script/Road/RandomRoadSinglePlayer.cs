@@ -27,9 +27,23 @@ public class RandomRoadSinglePlayer : MonoBehaviour
     [Header("Road Deletion")]
     public int roadcheck;
     public int nroaddelete;
+    private int generatedRoads = 0;
+
+
+    /* Array filled with:
+     * 0 -> easy,
+     * 1 -> medium,
+     * 2 -> hard
+     */
+    private List<int> lotteryTickets;
+
+    [SerializeField] private int startDifficultTurn;
+    [SerializeField] private int speedDifficultyMultiplier;
+
 
     [Header("Roads")]
     [SerializeField] private GameObject[] myArray;
+
 
     // Start is     called before the first frame update
     private void Awake()
@@ -43,6 +57,13 @@ public class RandomRoadSinglePlayer : MonoBehaviour
         //        _tr.GetComponents<Transform>();
         roadss = new List<GameObject>();
         currentspawn = maxSpeed;
+        lotteryTickets = new List<int>();
+
+        for(int i=0; i<100; i++)
+        {
+            lotteryTickets.Add(0);
+        }
+
 
     }
 
@@ -67,12 +88,28 @@ public class RandomRoadSinglePlayer : MonoBehaviour
         if (gameObject.transform.GetChild(0).gameObject.activeSelf == false)
         {
             bool flag = true;
+
+            for (int i = 0; i < speedDifficultyMultiplier; i++)
+                lotteryTickets.Add(1);
+
+            if(generatedRoads>=startDifficultTurn)
+            {
+                for (int i = 0; i < speedDifficultyMultiplier; i++)
+                    lotteryTickets.Add(2);
+            }
+
+            int index_difficulty = UnityEngine.Random.Range(0, lotteryTickets.Count);
+            int difficulty = lotteryTickets[index_difficulty];
+
+            int startIndex = difficulty * 5;
+            int endIndex = difficulty * 5 + 5;
+
             //int value = checkcurve();
-            int value = UnityEngine.Random.Range(0, myArray.Length);
+            int value = UnityEngine.Random.Range(startIndex, endIndex);
 
             while (flag)
             {
-                value = UnityEngine.Random.Range(0, myArray.Length);
+                value = UnityEngine.Random.Range(startIndex, endIndex);
                 GameObject pre = myArray[value];
                 if (checkcollision(pre))
                 {
@@ -104,6 +141,7 @@ public class RandomRoadSinglePlayer : MonoBehaviour
             //myroute.UpdateNodes();
 
         }
+        generatedRoads++;
     }
      
 
