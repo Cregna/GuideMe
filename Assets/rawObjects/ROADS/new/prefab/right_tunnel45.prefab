@@ -179,8 +179,8 @@ GameObject:
   - component: {fileID: 4676054384165799154}
   - component: {fileID: 4449459739517222596}
   - component: {fileID: 7963245281055113789}
-  - component: {fileID: -4003370626559848414}
   - component: {fileID: 9066328782632631942}
+  - component: {fileID: 3773651147412377696}
   m_Layer: 0
   m_Name: right_tunnel45
   m_TagString: Untagged
@@ -254,20 +254,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8556829846985684705}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: -5208879343037863941, guid: 83f748118f1dec64b963fea528308406, type: 3}
 --- !u!114 &9066328782632631942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -283,6 +269,20 @@ MonoBehaviour:
   percentage: 0.8
   pushforce: 40
   txtui: 0
+--- !u!64 &3773651147412377696
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8556829846985684705}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -5208879343037863941, guid: 83f748118f1dec64b963fea528308406, type: 3}
 --- !u!1 &8956933859405031339
 GameObject:
   m_ObjectHideFlags: 0

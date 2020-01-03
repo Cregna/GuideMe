@@ -209,8 +209,8 @@ GameObject:
   - component: {fileID: 7384910834392166105}
   - component: {fileID: 1956673274619352303}
   - component: {fileID: 5196017705247057942}
-  - component: {fileID: -1406490754859810107}
   - component: {fileID: 1854725184954535816}
+  - component: {fileID: 7100579896221740367}
   m_Layer: 0
   m_Name: hole
   m_TagString: Untagged
@@ -284,20 +284,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5775620910278384842}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: -8148374250349615983, guid: 8de8f72131f85704ba3ece32c4312372, type: 3}
 --- !u!114 &1854725184954535816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -313,3 +299,17 @@ MonoBehaviour:
   percentage: 0.8
   pushforce: -40
   txtui: 0
+--- !u!64 &7100579896221740367
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5775620910278384842}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -8148374250349615983, guid: 8de8f72131f85704ba3ece32c4312372, type: 3}

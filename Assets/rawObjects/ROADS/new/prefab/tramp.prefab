@@ -210,6 +210,7 @@ GameObject:
   - component: {fileID: 1646245044790339808}
   - component: {fileID: 5036196798594700313}
   - component: {fileID: 327985685028632334}
+  - component: {fileID: 2585735179670391462}
   m_Layer: 0
   m_Name: tramp
   m_TagString: Untagged
@@ -297,3 +298,18 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 3557879054105070054, guid: f3cffd53a571f974b94e05714f360de6, type: 3}
+--- !u!114 &2585735179670391462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6762432203489042629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 378fe7fd5b0e93c4d9b7fb6336d97a51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  percentage: 0
+  pushforce: 0
+  txtui: 0

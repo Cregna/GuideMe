@@ -71,9 +71,10 @@ GameObject:
   - component: {fileID: 6215945312923945450}
   - component: {fileID: 3105372591286203356}
   - component: {fileID: 8657315415377235749}
-  - component: {fileID: -5895364200334629385}
-  - component: {fileID: 4083581684080927458}
-  - component: {fileID: 1807880202593024472}
+  - component: {fileID: 8273290724113043887}
+  - component: {fileID: -1716602642780839715}
+  - component: {fileID: -8198098777929255390}
+  - component: {fileID: 8935537280463548313}
   m_Layer: 0
   m_Name: straightsplit
   m_TagString: Untagged
@@ -88,8 +89,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6924320216230984697}
-  m_LocalRotation: {x: -0.65328145, y: -0.2705981, z: -0.2705981, w: 0.65328145}
-  m_LocalPosition: {x: -91.31362, y: 0.04610443, z: -32.565792}
+  m_LocalRotation: {x: -0.6532815, y: -0.27059802, z: -0.27059802, w: 0.6532815}
+  m_LocalPosition: {x: -269.71207, y: 0.046102516, z: 49.026054}
   m_LocalScale: {x: 10.75393, y: 10.75393, z: 10.75393}
   m_Children:
   - {fileID: 8477651022892299769}
@@ -147,7 +148,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &-5895364200334629385
+--- !u!114 &8273290724113043887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6924320216230984697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 378fe7fd5b0e93c4d9b7fb6336d97a51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  percentage: 0.8
+  pushforce: -40
+  txtui: 0
+--- !u!64 &-1716602642780839715
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -161,7 +177,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: -5395582760244232606, guid: 2131eb4066be3994aa18ab7f72e65fea, type: 3}
---- !u!114 &4083581684080927458
+--- !u!114 &-8198098777929255390
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -179,11 +195,11 @@ MonoBehaviour:
   Synchronization: 3
   OwnershipTransfer: 0
   ObservedComponents:
-  - {fileID: 1807880202593024472}
+  - {fileID: 8935537280463548313}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
---- !u!114 &1807880202593024472
+--- !u!114 &8935537280463548313
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -209,7 +225,6 @@ GameObject:
   - component: {fileID: 3365771143635512052}
   - component: {fileID: 7277386419991548873}
   - component: {fileID: 5338701112089773020}
-  - component: {fileID: 2572224316094900359}
   - component: {fileID: 6781745293008271253}
   m_Layer: 0
   m_Name: PowerUp
@@ -294,20 +309,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2572224316094900359
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7086612820739595358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 378fe7fd5b0e93c4d9b7fb6336d97a51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  percentage: 0.8
-  pushforce: -40
 --- !u!65 &6781745293008271253
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -41,7 +41,6 @@ GameObject:
   - component: {fileID: 7890015135187413311}
   - component: {fileID: 7884528502979092169}
   - component: {fileID: 6616167501675993053}
-  - component: {fileID: 6447868854358546431}
   - component: {fileID: 6850692379686385452}
   m_Layer: 0
   m_Name: PowerUp
@@ -126,20 +125,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6447868854358546431
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 970433621585432300}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 378fe7fd5b0e93c4d9b7fb6336d97a51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  percentage: 0.8
-  pushforce: -40
 --- !u!65 &6850692379686385452
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -224,9 +209,10 @@ GameObject:
   - component: {fileID: 7384910834392166105}
   - component: {fileID: 1956673274619352303}
   - component: {fileID: 5196017705247057942}
-  - component: {fileID: -1406490754859810107}
-  - component: {fileID: -3984762967253190731}
-  - component: {fileID: 4992629926106766528}
+  - component: {fileID: 1854725184954535816}
+  - component: {fileID: 7100579896221740367}
+  - component: {fileID: -3507469174548273660}
+  - component: {fileID: -830596269924458261}
   m_Layer: 0
   m_Name: hole
   m_TagString: Untagged
@@ -241,8 +227,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5775620910278384842}
-  m_LocalRotation: {x: -0.6532815, y: 0.27059802, z: 0.27059802, w: 0.6532815}
-  m_LocalPosition: {x: -232.07239, y: -0.0000019073486, z: 179.47298}
+  m_LocalRotation: {x: -0.65328145, y: 0.27059808, z: 0.27059808, w: 0.65328145}
+  m_LocalPosition: {x: -183.1445, y: -0.0000019129366, z: 41.420517}
   m_LocalScale: {x: 10.75393, y: 10.75393, z: 10.75393}
   m_Children:
   - {fileID: 2895542610495690753}
@@ -300,7 +286,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &-1406490754859810107
+--- !u!114 &1854725184954535816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5775620910278384842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 378fe7fd5b0e93c4d9b7fb6336d97a51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  percentage: 0.8
+  pushforce: -40
+  txtui: 0
+--- !u!64 &7100579896221740367
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -314,7 +315,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: -8148374250349615983, guid: 8de8f72131f85704ba3ece32c4312372, type: 3}
---- !u!114 &-3984762967253190731
+--- !u!114 &-3507469174548273660
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -332,11 +333,11 @@ MonoBehaviour:
   Synchronization: 3
   OwnershipTransfer: 0
   ObservedComponents:
-  - {fileID: 4992629926106766528}
+  - {fileID: -830596269924458261}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
---- !u!114 &4992629926106766528
+--- !u!114 &-830596269924458261
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
