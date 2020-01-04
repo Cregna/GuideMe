@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1486514890819040335}
   - component: {fileID: 4503192108551412876}
   - component: {fileID: 4394118706332084978}
+  - component: {fileID: 8409877328318545925}
   m_Layer: 0
   m_Name: PowerUp
   m_TagString: Untagged
@@ -108,6 +109,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.1199994, y: 5.12, z: 8.022602}
   m_Center: {x: 0.0000075443477, y: -0.0000019832237, z: 1.348824}
+--- !u!114 &8409877328318545925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000368131925446151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d79b7c6f1ba4484b98ca9d030b83dbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pushforce: 40
 --- !u!1 &4237612023376496925
 GameObject:
   m_ObjectHideFlags: 0
@@ -132,7 +146,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4237612023376496925}
   m_LocalRotation: {x: -0.00000002107343, y: 0.7071068, z: 0.7071068, w: 0.00000002107343}
-  m_LocalPosition: {x: -0.88369995, y: -0.98319995, z: 0}
+  m_LocalPosition: {x: -0.88369995, y: -0.95, z: 0}
   m_LocalScale: {x: 0.3840689, y: 0.38406888, z: 0.38406888}
   m_Children: []
   m_Father: {fileID: 6122297763381161764}
@@ -165,8 +179,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7110511700978588983}
-  m_LocalRotation: {x: -0.000000011912748, y: 0.70710677, z: 0.70710677, w: 0.000000011912748}
-  m_LocalPosition: {x: 214.3534, y: -0.0000000037252903, z: -95.260765}
+  m_LocalRotation: {x: -0.65328145, y: 0.2705981, z: 0.2705981, w: 0.65328145}
+  m_LocalPosition: {x: -119.61925, y: -0.000007627532, z: 360.11798}
   m_LocalScale: {x: 28, y: 28, z: 28}
   m_Children:
   - {fileID: 5727401407808988317}
@@ -250,8 +264,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 378fe7fd5b0e93c4d9b7fb6336d97a51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  percentage: 0.8
-  pushforce: 40
   txtui: 0
 --- !u!1 &7176221514215406908
 GameObject:
@@ -277,7 +289,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7176221514215406908}
   m_LocalRotation: {x: -0.00000002107343, y: 0.7071068, z: 0.7071068, w: 0.00000002107343}
-  m_LocalPosition: {x: -0.8835, y: -0.9862, z: 0}
+  m_LocalPosition: {x: -0.8835, y: -0.98, z: 0}
   m_LocalScale: {x: 0.3840689, y: 0.38406888, z: 0.38406888}
   m_Children: []
   m_Father: {fileID: 6122297763381161764}

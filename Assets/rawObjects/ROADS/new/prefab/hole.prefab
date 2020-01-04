@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 7884528502979092169}
   - component: {fileID: 6616167501675993053}
   - component: {fileID: 6850692379686385452}
+  - component: {fileID: 6635509692811013535}
   m_Layer: 0
   m_Name: PowerUp
   m_TagString: Untagged
@@ -138,6 +139,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.1199994, y: 5.12, z: 8.022602}
   m_Center: {x: 0.0000075443477, y: -0.0000019832237, z: 1.348824}
+--- !u!114 &6635509692811013535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970433621585432300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d79b7c6f1ba4484b98ca9d030b83dbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pushforce: -40
 --- !u!1 &4534965683186761367
 GameObject:
   m_ObjectHideFlags: 0
@@ -225,8 +239,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5775620910278384842}
-  m_LocalRotation: {x: -0.70710677, y: -0.00000016858745, z: -0.00000016858745, w: 0.70710677}
-  m_LocalPosition: {x: -99.09644, y: 0.0000028647482, z: 289.48923}
+  m_LocalRotation: {x: 0.00000010536715, y: 0.7071068, z: 0.7071068, w: -0.00000010536715}
+  m_LocalPosition: {x: 261.89954, y: 0.0000019017607, z: 234.82193}
   m_LocalScale: {x: 10.75393, y: 10.75393, z: 10.75393}
   m_Children:
   - {fileID: 2895542610495690753}
@@ -296,8 +310,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 378fe7fd5b0e93c4d9b7fb6336d97a51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  percentage: 0.8
-  pushforce: -40
   txtui: 0
 --- !u!64 &7100579896221740367
 MeshCollider:

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Microsoft.Win32;
 using UnityEngine;
 using UnityStandardAssets.Utility;
+using Random = UnityEngine.Random;
 
 
 public class RandomRoadSinglePlayer : MonoBehaviour
@@ -17,6 +18,7 @@ public class RandomRoadSinglePlayer : MonoBehaviour
     private List<GameObject> roadss;
     private float currentspawn;
     private float time;
+    private float percentage = 0.8f;
     static bool flag = true;
     float elapsed = 0f;  
 
@@ -126,7 +128,10 @@ public class RandomRoadSinglePlayer : MonoBehaviour
             SoundManager.instance.playSingle();
             GameObject go =ObjectPoolingManager.Instance.GetObject(myArray[value].name);
             roadss.Add(go);
-
+            if (Random.value > percentage)
+            {
+                go.gameObject.transform.GetChild(1).gameObject.SetActive(true);
+            }
             n++;
             go.tag = n.ToString();
             go.transform.position = next_road_position.position;
@@ -161,8 +166,8 @@ public class RandomRoadSinglePlayer : MonoBehaviour
          direction *= 50;
          // Vector3 forward = transform.TransformDirection(Vector3.forward) * 50;
          //forward = Quaternion.Euler(direction) * forward;
-         Debug.DrawRay(pre.transform.GetChild(2).position, direction, Color.green, 10);
-         if (Physics.SphereCast(pre.transform.GetChild(2).position,20f, direction, out hit,70f))
+         Debug.DrawRay(pre.transform.GetChild(3).position, direction, Color.green, 10);
+         if (Physics.SphereCast(pre.transform.GetChild(2).position,40f, direction, out hit,80f))
          {
              print("Found an object - distance: " + hit.distance);
              return true;

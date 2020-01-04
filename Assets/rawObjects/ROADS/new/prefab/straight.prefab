@@ -27,8 +27,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2252933176252536379}
-  m_LocalRotation: {x: -0.27059802, y: 0.6532815, z: 0.6532815, w: 0.27059802}
-  m_LocalPosition: {x: 14.964093, y: 0, z: 36.163315}
+  m_LocalRotation: {x: -0.70710677, y: -0.000000038430727, z: -0.000000038430727,
+    w: 0.70710677}
+  m_LocalPosition: {x: -195.02438, y: -0.00000667572, z: 205.96696}
   m_LocalScale: {x: 10.75393, y: 10.75393, z: 10.75393}
   m_Children:
   - {fileID: 1727512903362472915}
@@ -112,8 +113,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 378fe7fd5b0e93c4d9b7fb6336d97a51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  percentage: 0.8
-  pushforce: 40
   txtui: 0
 --- !u!1 &3800090899113657334
 GameObject:
@@ -187,6 +186,7 @@ GameObject:
   - component: {fileID: 205051716360535551}
   - component: {fileID: 5517523430454710502}
   - component: {fileID: 8203043338499503284}
+  - component: {fileID: 1977629125976728894}
   m_Layer: 0
   m_Name: PowerUp
   m_TagString: Untagged
@@ -283,6 +283,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.1199994, y: 5.12, z: 8.022602}
   m_Center: {x: 0.0000075443477, y: -0.0000019832237, z: 1.348824}
+--- !u!114 &1977629125976728894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6587582347867502807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d79b7c6f1ba4484b98ca9d030b83dbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pushforce: 40
 --- !u!1 &9199272798969220910
 GameObject:
   m_ObjectHideFlags: 0
