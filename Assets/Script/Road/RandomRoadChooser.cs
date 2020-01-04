@@ -17,7 +17,7 @@ public class RandomRoadChooser : MonoBehaviour
     int index;
     public static bool spdup=false;
     public static List<RoadType> choose = new List<RoadType>();
-    private static List<int> lotteryTickets = new List<int> ();
+    private List<int> lotteryTickets = new List<int> ();
     int generatedRoads=0;
     private int speedDifficultyMultiplier = 3;
     private int startDifficultTurn = 10;
