@@ -13,7 +13,7 @@ public class RandomRoadChooser : MonoBehaviour
     public Sprite left45;
     public Sprite straight;
     float percentage = 0.8f;
-    Vector3[] positionArray = new[]{ new Vector3(1449.4f, 2201.7f, -2943.6f), new Vector3(1650.3f, 2201.7f, -2943.6f), new Vector3(1800.4f, 2201.7f, -2943.6f) };
+    Vector3[] positionArray = new[]{ new Vector3(1200.4f, 2201.7f, -2943.6f), new Vector3(1650.3f, 2201.7f, -2943.6f), new Vector3(2200.4f, 2201.7f, -2943.6f) };
     int index;
     public static bool spdup=false;
     public static List<RoadType> choose = new List<RoadType>();
@@ -100,7 +100,10 @@ public class RandomRoadChooser : MonoBehaviour
 
             choose.Add(new RoadType(obj[index].roadName, obj[index].roadType, obj[index].icon));
             GameObject go = ObjectPoolingManager.Instance.GetObject(obj[index].roadName);
-            
+            if (obj[index].roadName == "tramp")
+            {
+                go.transform.localScale = new Vector3(12f,20f,20f);
+            }
             //n++;
             //go.tag = n.ToString();
             go.transform.position = positionArray[j];

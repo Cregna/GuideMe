@@ -376,7 +376,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pun: 1
   timeToLive: 15
-  startColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
+  startColor: {r: 0.13207549, g: 0.13207549, b: 0.13207549, a: 1}
   endColor: {r: 1, g: 1, b: 1, a: 0}
   minSpeed: 5
   overTime: 150
@@ -1619,7 +1619,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 975.8
-  field of view: 40.7
+  field of view: 26.99147
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -1659,9 +1659,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   smoothSpeed: 1
-  rotation: 45
+  rotation: 60
   uibox: 2
-  offset: {x: 0, y: 150, z: -150}
+  offset: {x: 0, y: 180, z: -100}
 --- !u!1 &3036893598441448031
 GameObject:
   m_ObjectHideFlags: 0
@@ -2099,9 +2099,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   smoothSpeed: 1
-  rotation: 45
+  rotation: 60
   uibox: 1
-  offset: {x: 0, y: 150, z: -150}
+  offset: {x: 0, y: 180, z: -100}
 --- !u!1 &5771231745090976397
 GameObject:
   m_ObjectHideFlags: 0
@@ -2160,7 +2160,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 975.8
-  field of view: 40.7
+  field of view: 26.99147
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -2200,9 +2200,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   smoothSpeed: 1
-  rotation: 45
+  rotation: 60
   uibox: 3
-  offset: {x: 0, y: 150, z: -150}
+  offset: {x: 0, y: 180, z: -100}
 --- !u!1 &6219995404439732208
 GameObject:
   m_ObjectHideFlags: 0

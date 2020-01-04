@@ -115,7 +115,7 @@ public class RoadCreation : MonoBehaviour
                     if (materials.Length > 1)
                     {
                         materials[0].color = Color.Lerp(startColor, endColor, Mathf.PingPong(Time.time,1f));
-//                    materials[1].color = Color.Lerp(Color.gray, Color.black, Mathf.PingPong(Time.time,1f));
+                        materials[1].color = Color.Lerp(startColor, endColor, Mathf.PingPong(Time.time,1f));
                         materials[2].color = Color.Lerp(startColor, endColor, Mathf.PingPong(Time.time,1f));
                     }
                     else
@@ -179,6 +179,10 @@ public class RoadCreation : MonoBehaviour
         RandomRoadChooser.spdup = false;
         foreach (GameObject ro in del)
         {
+            if (ro.name.StartsWith("tramp"))
+            {
+                ro.transform.localScale = new Vector3(28f,28f,28f);
+            }
             ro.SetActive(false);
             ro.tag = "Untagged";
         }
