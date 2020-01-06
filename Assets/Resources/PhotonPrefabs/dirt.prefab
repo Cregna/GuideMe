@@ -72,7 +72,7 @@ GameObject:
   - component: {fileID: 6939518438663802031}
   - component: {fileID: 1805440614947138960}
   - component: {fileID: 7266567142721687888}
-  - component: {fileID: 7126126568376372197}
+  - component: {fileID: 5735261155553371448}
   m_Layer: 0
   m_Name: PowerUp
   m_TagString: Untagged
@@ -87,16 +87,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7151162149269263723}
-  m_LocalRotation: {x: -0, y: 0.000000014901163, z: 0.9247428, w: 0.38059273}
-  m_LocalPosition: {x: 0, y: 0, z: 0.072}
-  m_LocalScale: {x: 0.20000052, y: 0.20000042, z: 0.010000068}
+  m_LocalRotation: {x: -0, y: -0, z: 0.9247428, w: 0.38059264}
+  m_LocalPosition: {x: 0, y: 0, z: 0.124}
+  m_LocalScale: {x: 0.33763102, y: 0.337631, z: 0.016881619}
   m_Children: []
   m_Father: {fileID: 4787983153287868818}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 135.259}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.374, y: 0}
+  m_AnchoredPosition: {x: -0.454, y: 0.027}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6939518438663802031
@@ -167,9 +167,9 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.1199994, y: 5.12, z: 8.022602}
-  m_Center: {x: 0.0000075443477, y: -0.0000019832237, z: 1.348824}
---- !u!114 &7126126568376372197
+  m_Size: {x: 4.5967236, y: 4.382169, z: 8.022602}
+  m_Center: {x: 0.2616459, y: 0.36891517, z: 1.3488233}
+--- !u!114 &5735261155553371448
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -181,7 +181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d79b7c6f1ba4484b98ca9d030b83dbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pushforce: 40
+  pushforce: 100
 --- !u!1 &8370235227503707009
 GameObject:
   m_ObjectHideFlags: 0
@@ -194,9 +194,9 @@ GameObject:
   - component: {fileID: 4551261190646926244}
   - component: {fileID: 7788371490805905245}
   - component: {fileID: 2504936031442620079}
-  - component: {fileID: -1779638914074339660}
-  - component: {fileID: 155119953105762266}
-  - component: {fileID: -1397546411506590252}
+  - component: {fileID: 5771815766948118216}
+  - component: {fileID: 7002592282016524196}
+  - component: {fileID: -4691174138930011617}
   m_Layer: 0
   m_Name: dirt
   m_TagString: Untagged
@@ -211,8 +211,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8370235227503707009}
-  m_LocalRotation: {x: -0.65328145, y: 0.2705981, z: 0.2705981, w: 0.65328145}
-  m_LocalPosition: {x: -134.59479, y: 0, z: 42.73562}
+  m_LocalRotation: {x: 0.49999997, y: 0.50000006, z: 0.50000006, w: -0.49999997}
+  m_LocalPosition: {x: 312.99817, y: 0.08627796, z: -38.95833}
   m_LocalScale: {x: 10.75393, y: 10.75393, z: 10.75393}
   m_Children:
   - {fileID: 4224499768357332544}
@@ -281,7 +281,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtui: 0
---- !u!64 &-1779638914074339660
+--- !u!64 &5771815766948118216
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -295,7 +295,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 7875615444233757513, guid: 3213054019d801c4cb869e024fa9fb43, type: 3}
---- !u!114 &155119953105762266
+--- !u!114 &7002592282016524196
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -313,11 +313,11 @@ MonoBehaviour:
   Synchronization: 3
   OwnershipTransfer: 0
   ObservedComponents:
-  - {fileID: -1397546411506590252}
+  - {fileID: -4691174138930011617}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
---- !u!114 &-1397546411506590252
+--- !u!114 &-4691174138930011617
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

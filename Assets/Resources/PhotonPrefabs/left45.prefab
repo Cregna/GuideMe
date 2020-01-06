@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 6263298455255523128}
   - component: {fileID: 5737828080567770136}
   - component: {fileID: 2866032013982748913}
-  - component: {fileID: 4535927304382181056}
+  - component: {fileID: 312219080594772665}
   m_Layer: 0
   m_Name: PowerUp
   m_TagString: Untagged
@@ -57,16 +57,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2779266446477129026}
-  m_LocalRotation: {x: -0, y: -0, z: 0.9130308, w: 0.40789068}
+  m_LocalRotation: {x: -0, y: 0.00000001047226, z: 0.9227626, w: 0.38536897}
   m_LocalPosition: {x: 0, y: 0, z: 0.026}
-  m_LocalScale: {x: 0.07681397, y: 0.07681394, z: 0.0038407159}
+  m_LocalScale: {x: 0.14397243, y: 0.14397238, z: 0.0071986536}
   m_Children: []
   m_Father: {fileID: 8860583504056013047}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 131.85501}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 134.667}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.114, y: 0.018}
+  m_AnchoredPosition: {x: -0.18, y: 0.01}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6263298455255523128
@@ -137,9 +137,9 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.1199994, y: 5.12, z: 8.022602}
-  m_Center: {x: 0.0000075443477, y: -0.0000019832237, z: 1.348824}
---- !u!114 &4535927304382181056
+  m_Size: {x: 4.384129, y: 4.4813123, z: 8.022602}
+  m_Center: {x: 0.36794558, y: 0.31934258, z: 1.3488239}
+--- !u!114 &312219080594772665
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d79b7c6f1ba4484b98ca9d030b83dbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pushforce: 40
+  pushforce: 50
 --- !u!1 &5524865715068674788
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,8 +165,8 @@ GameObject:
   - component: {fileID: 6093530911502308920}
   - component: {fileID: 2644718918239850695}
   - component: {fileID: 1612386113162003183}
-  - component: {fileID: -3778655521266470090}
-  - component: {fileID: 948721432328059915}
+  - component: {fileID: -1700847656646062649}
+  - component: {fileID: 7139132168071298035}
   m_Layer: 0
   m_Name: left45
   m_TagString: Untagged
@@ -181,8 +181,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5524865715068674788}
-  m_LocalRotation: {x: -0.49999994, y: 0.50000006, z: 0.50000006, w: 0.49999994}
-  m_LocalPosition: {x: -233.29309, y: 0, z: 245.54611}
+  m_LocalRotation: {x: 0.27059802, y: 0.6532815, z: 0.6532815, w: -0.27059802}
+  m_LocalPosition: {x: 251.09546, y: 0.08627987, z: 3.7526245}
   m_LocalScale: {x: 28, y: 28, z: 28}
   m_Children:
   - {fileID: 3179020227846015939}
@@ -267,7 +267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtui: 0
---- !u!114 &-3778655521266470090
+--- !u!114 &-1700847656646062649
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -285,11 +285,11 @@ MonoBehaviour:
   Synchronization: 3
   OwnershipTransfer: 0
   ObservedComponents:
-  - {fileID: 948721432328059915}
+  - {fileID: 7139132168071298035}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
---- !u!114 &948721432328059915
+--- !u!114 &7139132168071298035
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -328,7 +328,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7387376625292380793}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -1.3265, y: 0.5575, z: -0}
+  m_LocalPosition: {x: -1.3242, y: 0.5529, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8860583504056013047}
@@ -358,7 +358,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8911236236021917974}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -1.323, y: 0.552, z: -0}
+  m_LocalPosition: {x: -1.305, y: 0.5397, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8860583504056013047}

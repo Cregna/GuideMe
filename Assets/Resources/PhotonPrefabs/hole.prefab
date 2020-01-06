@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 7884528502979092169}
   - component: {fileID: 6616167501675993053}
   - component: {fileID: 6850692379686385452}
-  - component: {fileID: 4964379031848687555}
+  - component: {fileID: 6635509692811013535}
   m_Layer: 0
   m_Name: PowerUp
   m_TagString: Untagged
@@ -139,7 +139,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.1199994, y: 5.12, z: 8.022602}
   m_Center: {x: 0.0000075443477, y: -0.0000019832237, z: 1.348824}
---- !u!114 &4964379031848687555
+--- !u!114 &6635509692811013535
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -225,8 +225,8 @@ GameObject:
   - component: {fileID: 5196017705247057942}
   - component: {fileID: 1854725184954535816}
   - component: {fileID: 7100579896221740367}
-  - component: {fileID: -3507469174548273660}
-  - component: {fileID: -830596269924458261}
+  - component: {fileID: -4132723972007682926}
+  - component: {fileID: 2021126271036327681}
   m_Layer: 0
   m_Name: hole
   m_TagString: Untagged
@@ -241,8 +241,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5775620910278384842}
-  m_LocalRotation: {x: -0.65328145, y: 0.27059808, z: 0.27059808, w: 0.65328145}
-  m_LocalPosition: {x: -183.1445, y: -0.0000019129366, z: 41.420517}
+  m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: -0.5}
+  m_LocalPosition: {x: 62.93178, y: -0.000005725771, z: 225.03935}
   m_LocalScale: {x: 10.75393, y: 10.75393, z: 10.75393}
   m_Children:
   - {fileID: 2895542610495690753}
@@ -327,7 +327,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: -8148374250349615983, guid: 8de8f72131f85704ba3ece32c4312372, type: 3}
---- !u!114 &-3507469174548273660
+--- !u!114 &-4132723972007682926
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -345,11 +345,11 @@ MonoBehaviour:
   Synchronization: 3
   OwnershipTransfer: 0
   ObservedComponents:
-  - {fileID: -830596269924458261}
+  - {fileID: 2021126271036327681}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
---- !u!114 &-830596269924458261
+--- !u!114 &2021126271036327681
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
