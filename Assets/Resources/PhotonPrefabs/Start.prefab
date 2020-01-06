@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 1739922776555175365}
   - component: {fileID: 2806350818886202464}
   - component: {fileID: 1814694335258417822}
-  - component: {fileID: -170614861872783752}
-  - component: {fileID: 4483807657110509596}
+  - component: {fileID: -8358629487942970964}
+  - component: {fileID: -1440743436978616633}
   m_Layer: 0
   m_Name: Start
   m_TagString: Untagged
@@ -115,7 +115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 30
---- !u!114 &-170614861872783752
+--- !u!114 &-8358629487942970964
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -133,11 +133,11 @@ MonoBehaviour:
   Synchronization: 3
   OwnershipTransfer: 0
   ObservedComponents:
-  - {fileID: 4483807657110509596}
+  - {fileID: -1440743436978616633}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
---- !u!114 &4483807657110509596
+--- !u!114 &-1440743436978616633
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
