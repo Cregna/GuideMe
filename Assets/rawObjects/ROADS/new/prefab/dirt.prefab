@@ -194,7 +194,7 @@ GameObject:
   - component: {fileID: 4551261190646926244}
   - component: {fileID: 7788371490805905245}
   - component: {fileID: 2504936031442620079}
-  - component: {fileID: -1779638914074339660}
+  - component: {fileID: 5771815766948118216}
   m_Layer: 0
   m_Name: dirt
   m_TagString: Untagged
@@ -209,8 +209,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8370235227503707009}
-  m_LocalRotation: {x: 0.000000053618656, y: 0.7071068, z: 0.7071068, w: -0.000000053618656}
-  m_LocalPosition: {x: -353.30603, y: 0.046084404, z: 429.73892}
+  m_LocalRotation: {x: 0.49999997, y: 0.50000006, z: 0.50000006, w: -0.49999997}
+  m_LocalPosition: {x: 312.99817, y: 0.08627796, z: -38.95833}
   m_LocalScale: {x: 10.75393, y: 10.75393, z: 10.75393}
   m_Children:
   - {fileID: 4224499768357332544}
@@ -279,7 +279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtui: 0
---- !u!64 &
+--- !u!64 &5771815766948118216
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

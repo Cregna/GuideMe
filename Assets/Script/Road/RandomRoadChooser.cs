@@ -143,6 +143,11 @@ public class RandomRoadChooser : MonoBehaviour
             {
                 print(go.gameObject.transform.GetChild(1));
                 go.gameObject.transform.GetChild(1).gameObject.SetActive(false);
+                if (obj[index].roadName.Equals("loop")) {
+                    print("debuuuuuuuuuuuuuug");
+                    go.gameObject.transform.GetChild(1).gameObject.SetActive(true);
+                }
+              
                 
             }
             textui.GetComponent<UnityEngine.UI.Text>().text = "Normal";

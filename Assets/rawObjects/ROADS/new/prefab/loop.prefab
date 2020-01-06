@@ -50,7 +50,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3015776580672413888
 RectTransform:
   m_ObjectHideFlags: 0
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d79b7c6f1ba4484b98ca9d030b83dbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pushforce: 100
+  pushforce: 150
 --- !u!1 &6178693261145908369
 GameObject:
   m_ObjectHideFlags: 0
@@ -237,8 +237,8 @@ GameObject:
   - component: {fileID: 6745493271295208948}
   - component: {fileID: 2362077372646791106}
   - component: {fileID: 8357345758832388923}
-  - component: {fileID: -7835295749545714303}
   - component: {fileID: 4804665005187363782}
+  - component: {fileID: -8375143571810280504}
   m_Layer: 0
   m_Name: loop
   m_TagString: Untagged
@@ -253,9 +253,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7766342920189272039}
-  m_LocalRotation: {x: 0.2705981, y: 0.65328145, z: 0.65328145, w: -0.2705981}
-  m_LocalPosition: {x: -303.1491, y: 0.04608822, z: 332.08884}
-  m_LocalScale: {x: 5.2, y: 10.75393, z: 4.61}
+  m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: -0.5}
+  m_LocalPosition: {x: 62.910275, y: -0.000005725771, z: 184.86052}
+  m_LocalScale: {x: 7.0771995, y: 10.75393, z: 8.628647}
   m_Children:
   - {fileID: 2581778638996870277}
   - {fileID: 3015776580672413888}
@@ -312,20 +312,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7766342920189272039}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 4286659286876517218, guid: 88fa29bf66053b84d966a0449c05bd4d, type: 3}
 --- !u!114 &4804665005187363782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -339,3 +325,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pushforce: 100
+--- !u!64 &-8375143571810280504
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7766342920189272039}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4286659286876517218, guid: 88fa29bf66053b84d966a0449c05bd4d, type: 3}

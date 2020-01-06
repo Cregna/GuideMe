@@ -132,6 +132,9 @@ public class RandomRoadSinglePlayer : MonoBehaviour
             {
                 go.gameObject.transform.GetChild(1).gameObject.SetActive(true);
             }
+            if (myArray[value].name == "loop") {
+                go.gameObject.transform.GetChild(1).gameObject.SetActive(true);
+            }
             n++;
             go.tag = n.ToString();
             go.transform.position = next_road_position.position;

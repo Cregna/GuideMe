@@ -102,7 +102,6 @@ GameObject:
   - component: {fileID: 1101178240847418510}
   - component: {fileID: 6662128616271407223}
   - component: {fileID: 7050229574302491842}
-  - component: {fileID: -5836424660509010606}
   m_Layer: 0
   m_Name: bridge
   m_TagString: Untagged
@@ -190,19 +189,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 8604484703040581089, guid: 9d8163d12b22a274cb3556c4b6527c11, type: 3}
---- !u!114 &
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4920310829372431531}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 378fe7fd5b0e93c4d9b7fb6336d97a51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  txtui: 0
 --- !u!1 &5032431215822953881
 GameObject:
   m_ObjectHideFlags: 0
@@ -222,7 +208,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2940527780963953809
 RectTransform:
   m_ObjectHideFlags: 0
@@ -230,16 +216,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5032431215822953881}
-  m_LocalRotation: {x: -0.14945535, y: -0.08221218, z: -0.91933906, w: -0.35457018}
-  m_LocalPosition: {x: 0, y: 0, z: 0.27}
-  m_LocalScale: {x: 0.36366075, y: 0.36366075, z: 0.018183114}
+  m_LocalRotation: {x: -0.1652639, y: -0.06105567, z: -0.9200343, w: -0.34999558}
+  m_LocalPosition: {x: 0, y: 0, z: 0.172}
+  m_LocalScale: {x: 0.3154133, y: 0.3203989, z: 0.017275231}
   m_Children: []
   m_Father: {fileID: 8219963744992014008}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: -2.5890002, y: 19.478, z: -222.62599}
+  m_LocalEulerAnglesHint: {x: 0.19100001, y: 20.294, z: -221.62099}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.39, y: 0.01}
+  m_AnchoredPosition: {x: -0.32, y: 0.024}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2301157404812514822
