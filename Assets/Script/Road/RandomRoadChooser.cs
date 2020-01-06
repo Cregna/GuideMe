@@ -22,8 +22,8 @@ public class RandomRoadChooser : MonoBehaviour
     public static List<RoadType> choose = new List<RoadType>();
     private List<int> lotteryTickets = new List<int> ();
     int generatedRoads=0;
-    private int speedDifficultyMultiplier = 3;
-    private int startDifficultTurn = 10;
+    public int speedDifficultyMultiplier = 3;
+    public int startDifficultTurn = 10;
     
 
 
