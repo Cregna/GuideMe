@@ -402,7 +402,7 @@ MonoBehaviour:
   left90: {fileID: 2170412869589268234, guid: 63bc09a76fc8801419393e1d65684ce5, type: 3}
   straightsplit: {fileID: 6924320216230984697, guid: 8edf2a4719ab36148a909fc1ca7f2c70,
     type: 3}
-  loop: {fileID: 7766342920189272039, guid: 0edfee0126b226144bb040dac32da37a, type: 3}
+  loop: {fileID: 1349127995216584229, guid: 9291c0954e4f9d4458625f5bdf4024b3, type: 3}
   bridge: {fileID: 4920310829372431531, guid: e698a14bed30b59439f85330573a5c47, type: 3}
   dirt: {fileID: 8370235227503707009, guid: 117075b18cbdc7d419376d7767df8c06, type: 3}
   hole: {fileID: 5775620910278384842, guid: a3a71211293b53a4482079f7d907944a, type: 3}
@@ -1494,7 +1494,7 @@ MonoBehaviour:
   - {fileID: 7110511700978588983, guid: 60b0e5754128142459677b700e3dcec4, type: 3}
   - {fileID: 6924320216230984697, guid: 8edf2a4719ab36148a909fc1ca7f2c70, type: 3}
   - {fileID: 8370235227503707009, guid: 117075b18cbdc7d419376d7767df8c06, type: 3}
-  - {fileID: 7766342920189272039, guid: 0edfee0126b226144bb040dac32da37a, type: 3}
+  - {fileID: 1349127995216584229, guid: 9291c0954e4f9d4458625f5bdf4024b3, type: 3}
   - {fileID: 6762432203489042629, guid: 8303fab0ac671ea40908f4d8664ff376, type: 3}
   - {fileID: 4920310829372431531, guid: e698a14bed30b59439f85330573a5c47, type: 3}
   - {fileID: 5775620910278384842, guid: a3a71211293b53a4482079f7d907944a, type: 3}
@@ -1649,11 +1649,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3629319901892110074, guid: df6ad9851c2c20245a543fba25b9b330,
-        type: 3}
-      propertyPath: m_Name
-      value: CarCameraRig
-      objectReference: {fileID: 0}
     - target: {fileID: 3629319901892110022, guid: df6ad9851c2c20245a543fba25b9b330,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1708,6 +1703,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629319901892110074, guid: df6ad9851c2c20245a543fba25b9b330,
+        type: 3}
+      propertyPath: m_Name
+      value: CarCameraRig
       objectReference: {fileID: 0}
     - target: {fileID: 3629319901892110075, guid: df6ad9851c2c20245a543fba25b9b330,
         type: 3}
@@ -3022,11 +3022,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6962784054066297994, guid: 6756a1bc5580def42ad9227710d9db91,
-        type: 3}
-      propertyPath: viewIdField
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 6066036232125721135, guid: 6756a1bc5580def42ad9227710d9db91,
         type: 3}
       propertyPath: m_Name
@@ -3086,6 +3081,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6962784054066297994, guid: 6756a1bc5580def42ad9227710d9db91,
+        type: 3}
+      propertyPath: viewIdField
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6756a1bc5580def42ad9227710d9db91, type: 3}

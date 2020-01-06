@@ -18,7 +18,7 @@ public class LoseEvent : MonoBehaviour
     void Update()
     {
         
-        if (transform.position.y < -2f)
+        if (transform.position.y < -10f)
         {
             if (!pun)
             {
