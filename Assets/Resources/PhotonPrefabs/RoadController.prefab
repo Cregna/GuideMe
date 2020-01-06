@@ -1138,6 +1138,8 @@ MonoBehaviour:
   - {fileID: 7225298242120685688, guid: 9d8163d12b22a274cb3556c4b6527c11, type: 3}
   - {fileID: -7540856775010145387, guid: 9d8163d12b22a274cb3556c4b6527c11, type: 3}
   matdirt: {fileID: 2100000, guid: 9483f9ba359a53c429a8138222ffa687, type: 2}
+  speedDifficultyMultiplier: 3
+  startDifficultTurn: 10
 --- !u!1 &291514891921184902
 GameObject:
   m_ObjectHideFlags: 0
