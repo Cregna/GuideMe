@@ -185,6 +185,7 @@ GameObject:
   - component: {fileID: 245265434443607058}
   - component: {fileID: 2308055651431991678}
   - component: {fileID: 5795521890927834007}
+  - component: {fileID: 5484856168602529203}
   m_Layer: 0
   m_Name: PowerUp
   m_TagString: Untagged
@@ -199,16 +200,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5378654122029989223}
-  m_LocalRotation: {x: -0.00000050663937, y: -0.0000006631015, z: 0.9562944, w: 0.29240543}
+  m_LocalRotation: {x: -0.00000013411045, y: -0.0000007599592, z: 0.99060386, w: 0.13676295}
   m_LocalPosition: {x: 0, y: 0, z: 0.051}
-  m_LocalScale: {x: 0.2000004, y: 0.20000051, z: 0.010000071}
+  m_LocalScale: {x: 0.33423755, y: 0.33711267, z: 0.01746323}
   m_Children: []
   m_Father: {fileID: 676211210324704584}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -214.004}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -195.721}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.437, y: -0.069}
+  m_AnchoredPosition: {x: -0.538, y: -0.016}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &245265434443607058
@@ -279,8 +280,21 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.1199994, y: 5.12, z: 8.022602}
-  m_Center: {x: 0.0000075443477, y: -0.0000019832237, z: 1.348824}
+  m_Size: {x: 3.8884068, y: 3.9288, z: 8.022602}
+  m_Center: {x: 0.19682446, y: 0.22539537, z: 1.3488237}
+--- !u!114 &5484856168602529203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5378654122029989223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d79b7c6f1ba4484b98ca9d030b83dbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pushforce: 40
 --- !u!1 &8995632421717189278
 GameObject:
   m_ObjectHideFlags: 0
