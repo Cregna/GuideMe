@@ -1437,6 +1437,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Start
       objectReference: {fileID: 0}
+    - target: {fileID: 1814694335258417822, guid: e2880bae23b65fd4aa5f32a86a4f4cb7,
+        type: 3}
+      propertyPath: timer
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 3909966013712202506, guid: e2880bae23b65fd4aa5f32a86a4f4cb7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1491,11 +1496,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 1814694335258417822, guid: e2880bae23b65fd4aa5f32a86a4f4cb7,
-        type: 3}
-      propertyPath: timer
-      value: 200
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2880bae23b65fd4aa5f32a86a4f4cb7, type: 3}
@@ -3041,11 +3041,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2662958215537466182, guid: 4b34a5197df6be548b43cdc4667beadd,
-        type: 3}
-      propertyPath: m_Name
-      value: TopViewCamera
-      objectReference: {fileID: 0}
     - target: {fileID: 2662958215537465758, guid: 4b34a5197df6be548b43cdc4667beadd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3100,6 +3095,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2662958215537466182, guid: 4b34a5197df6be548b43cdc4667beadd,
+        type: 3}
+      propertyPath: m_Name
+      value: TopViewCamera
       objectReference: {fileID: 0}
     - target: {fileID: 2662958215537466907, guid: 4b34a5197df6be548b43cdc4667beadd,
         type: 3}
