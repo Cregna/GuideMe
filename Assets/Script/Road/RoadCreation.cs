@@ -115,6 +115,12 @@ public class RoadCreation : MonoBehaviour
                     if (materials.Length > 1)
                     {
                         materials[0].color = Color.Lerp(startColor, endColor, Mathf.PingPong(Time.time,1f));
+                        //materials[1].color = Color.Lerp(startColor, endColor, Mathf.PingPong(Time.time,1f));
+                        materials[2].color = Color.Lerp(startColor, endColor, Mathf.PingPong(Time.time,1f));
+                    }
+                    if(roadss2[i].name.Contains("tunnel"))
+                    {
+                        materials[0].color = Color.Lerp(startColor, endColor, Mathf.PingPong(Time.time,1f));
                         materials[1].color = Color.Lerp(startColor, endColor, Mathf.PingPong(Time.time,1f));
                         materials[2].color = Color.Lerp(startColor, endColor, Mathf.PingPong(Time.time,1f));
                     }

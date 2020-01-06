@@ -12,6 +12,9 @@ public class RandomRoadChooser : MonoBehaviour
     public Sprite left90;
     public Sprite left45;
     public Sprite straight;
+    public Material[] mat;
+    public Material matdirt;
+
     float percentage = 0.8f;
     Vector3[] positionArray = new[]{ new Vector3(1200.4f, 2201.7f, -2943.6f), new Vector3(1650.3f, 2201.7f, -2943.6f), new Vector3(2200.4f, 2201.7f, -2943.6f) };
     int index;
@@ -41,7 +44,7 @@ public class RandomRoadChooser : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        
         if (generatedRoads==0)
         {
             for(int i=0; i<5; i++)
@@ -99,7 +102,26 @@ public class RandomRoadChooser : MonoBehaviour
            
 
             choose.Add(new RoadType(obj[index].roadName, obj[index].roadType, obj[index].icon));
+
             GameObject go = ObjectPoolingManager.Instance.GetObject(obj[index].roadName);
+            if(!obj[index].roadName.Contains("tunnel"))
+            {
+                go.GetComponent<Renderer>().materials = mat;
+            }
+            if(obj[index].roadName.Contains("tunnel"))
+            {
+                Material[] mat2 = new Material[3];
+                mat2[0] = mat[2];
+                mat2[1] = mat[0];
+                mat2[2] = mat[1];
+                go.GetComponent<Renderer>().materials = mat2;
+            }
+
+            if (obj[index].roadName.Equals("dirt"))
+            {
+                go.GetComponent<Renderer>().material = matdirt;
+            }
+            
             if (obj[index].roadName == "tramp")
             {
                 go.transform.localScale = new Vector3(12f,20f,20f);
@@ -131,7 +153,6 @@ public class RandomRoadChooser : MonoBehaviour
                 textui.GetComponent<UnityEngine.UI.Text>().color = Color.blue;
                 spdup = true;
             }
-          
         }
         
         int k = 0;
